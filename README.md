@@ -10,6 +10,14 @@ Agent skills by SmileFX in the open SKILL.md format. Works with Claude, Codex, G
 | [ui-refinement](design/ui-refinement/SKILL.md) | Finds and fixes 15 detail-level UI/UX mistakes and suggests UX upgrades |
 | [layout-refinement](design/layout-refinement/SKILL.md) | Audits and improves layouts against 7 layout techniques from graphic design |
 
+## Copy
+
+| Skill | Purpose |
+| --- | --- |
+| [copy-rules](copy/copy-rules/SKILL.md) | Rules for German marketing and business copy: stance, sentence rules, banned AI patterns, value-driven wording, sentence checker script |
+| [sales-page-copy](copy/sales-page-copy/SKILL.md) | Sales pages, landing pages and pitch presentations end to end: instruction checklist, reader chain, copy, review rounds, hand-off |
+| [copy-review-panel](copy/copy-review-panel/SKILL.md) | Independent reviewer panel for copy: personas, sales psychology expert, client reviewer, behavior test, debate with referee |
+
 ## External skills we use
 
 Third-party skills and tools these skills build on or are used alongside.

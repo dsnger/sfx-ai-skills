@@ -31,6 +31,15 @@ Small layout moves with a big effect. The techniques come from graphic design (p
 | 6 | Same question, same place | When the same question applies to several items (opening time, price, status), nobody should have to hunt for it in body text | Align the answers in a shared column or row that sits on the same line as its item. Two routes: browsing (image, text) and shortcut (column), using the same rows | Prices, dates, durations, status always in the same position and on one line in cards; comparison tables instead of info buried in copy |
 | 7 | Information at the decision point | People act step by step. A note that comes after the action is seen too late | Walk through the layout in the user's order. At every point where they form an opinion or make a choice: have they seen everything that could change it? If not, move that info right there | Conditions, notes and options inside the step, not below it: shipping costs next to the price, format requirements at the upload field, variant notes before the add-to-cart button |
 
+## Multi-page and content-heavy layouts
+
+Additional rules when a site has several pages or long content blocks:
+
+- **Same function, same form.** Sections with the same content and task (process, FAQ, contact, review) look identical on main and sub pages. No special design per page; readers recognize the pattern and find their way faster.
+- **Don't pad sub pages.** What the main page already summarizes is not repeated as its own section on a sub page; sub pages go deeper, not wider.
+- **Long lists as an accordion.** Data sheets or feature lists per area as an accordion, values right-aligned, the most important area open by default.
+- **Sticky heading for long right columns.** For long content like FAQ or contract terms, keep the section heading standing on the left while the content scrolls on the right.
+
 ## Audit: steps
 
 1. Look at the layout: desktop and mobile screenshots (for print: full view and detail). Add a scaled-down view at real-world size (technique 4) and a blurred squint view (technique 2).
