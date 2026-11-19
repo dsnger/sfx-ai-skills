@@ -13,7 +13,7 @@ Project-specific text rules (e.g. a `textregeln.md` in the project) take precede
 
 1. Before writing: read the project's own text rules and briefing, if any.
 2. Write the text following the rules below. For each unit (heading, paragraph, button) draft two or three variants and keep the best.
-3. Run `python3 scripts/check_sentences.py <file>` (HTML or Markdown). Add project nouns that must never act, e.g. `--things "Dashboard|Portal"`. Resolve every hit or consciously keep it.
+3. If `scripts/check_sentences.py` is available (it ships with this skill in the sfx-ai-skills repo), run `python3 scripts/check_sentences.py <file>` (HTML or Markdown). Add project nouns that must never act, e.g. `--things "Dashboard|Portal"`. Resolve every hit or consciously keep it. Without the script, check sentence length, things as subject, "nicht … sondern", dashes and short punchlines by hand.
 4. Check every rule below once more by hand. The script only catches mechanical patterns.
 
 ## Stance
