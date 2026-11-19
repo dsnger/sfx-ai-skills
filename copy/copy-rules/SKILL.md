@@ -16,6 +16,19 @@ Project-specific text rules (e.g. a `textregeln.md` in the project) take precede
 3. If `scripts/check_sentences.py` is available (it ships with this skill in the sfx-ai-skills repo), run `python3 scripts/check_sentences.py <file>` (HTML or Markdown). Add project nouns that must never act, e.g. `--things "Dashboard|Portal"`. Resolve every hit or consciously keep it. Without the script, check sentence length, things as subject, "nicht … sondern", dashes and short punchlines by hand.
 4. Check every rule below once more by hand. The script only catches mechanical patterns.
 
+## Before and while writing
+
+- **Diagnose first, in one line with evidence.** Which situation is this? Then change only as much as the situation allows.
+  - *Blank or generic:* a one-line ask or interchangeable company speak. Build the argument from briefing and facts; freedom in the angle, never in the facts.
+  - *Real voice present:* the draft has an angle or a recognizable voice, even if rough. Keep the argument, the emphasis and the client's vocabulary; fix only buried statements, vague lines, rule violations and structure. Don't add sections nobody asked for.
+  - *Point edit:* "fix this heading". Change only that, plus the minimum around it, and return the rest untouched.
+- **Three questions per line.** Can the reader picture it? Can it be proven true or false? Could a competitor write the exact same sentence, or does it add nothing others don't already say? Three passes: keep it. Two: sharpen the weak spot. One or none: rewrite from the facts or mark `[NEED: …]`.
+- **Ration the strong moments.** Most lines are plain, concrete and calm. A page gets one or two memorable moments, usually the main heading and one section. When every line tries to stand out, none does, and the text reads as AI.
+- **Leave-it-alone test.** Before handing over, check every change: clearly better or just different? Undo changes without a reason, especially when a real voice was present.
+- **Declined claims name their unlock.** Never write a claim the facts don't carry, and never drop it silently either. Name the claim, say why it falls short, offer the closest provable alternative and say which proof would allow the original (survey with source, written guarantee, measured times, certificate). This turns a deletion into a task for the client.
+
+*Diagnosis, the three questions, ration and leave-it-alone test adapted from the `copywriting` skill in [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT), which credits Profound's skills-marketing-library (MIT); the "adds nothing others say" question from [kostja94/marketing-skills](https://github.com/kostja94/marketing-skills) (MIT).*
+
 ## Stance
 
 | Rule | Why | Check question |

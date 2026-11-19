@@ -1,6 +1,6 @@
 ---
 name: copy-review-panel
-description: Runs a panel of independent reviewers on copy (sales pages, landing pages, offers, presentations): target-group personas, a sales psychology expert, a strict client reviewer, a second AI or senior copywriter, behavior tests and a debate with a referee, then merges the findings. Use this skill whenever copy should be tested before hand-off, the user asks "how would customers react", wants feedback rounds, a second opinion or a score for a text, even if they don't say "panel".
+description: Runs a panel of independent reviewers on copy (sales pages, landing pages, offers, presentations), namely target-group personas, a sales psychology expert, a strict client reviewer, a second AI or senior copywriter, behavior tests and a debate with a referee, then merges the findings. Use this skill whenever copy should be tested before hand-off, the user asks "how would customers react", wants feedback rounds, a second opinion or a score for a text, even if they don't say "panel".
 ---
 
 # Copy Review Panel
@@ -12,6 +12,8 @@ One author grading their own text misses what readers notice. This panel lets se
 - Generate a plain text version (Markdown) of the page or presentation. Reviewers read only that, change no file, and answer within a word limit.
 - Gather the inputs reviewers need: the instruction checklist, the project's text rules, the `copy-rules` skill, and the client's original messages (for tone and standard).
 - Run reviewers in parallel as subagents, mixing different models where possible. Continue personas and the client reviewer in follow-up rounds (same agent, new message) so they compare improvements.
+- **Without subagents** (or when they can't write files): run the roles one after another yourself. Write each role's answer completely before reading the next role, and never let a role see the others' results. Flag this in the report ("roles run sequentially by one model, reduced independence"), because agreements then count less.
+- Save every reviewer's full answer in a separate file (`review-voices.md` or one file per reviewer). The report itself only holds the merged result.
 
 ## Reviewers
 
@@ -60,7 +62,10 @@ Three experts (different roles and models) review independently, given only thei
 
 Rejected: … (reason)
 Open for the client: …
+Single voices: review-voices.md
 ```
+
+Keep the report to one screen: score line, at most about ten merged findings, rejected hints, open points. No quotes from individual voices beyond the finding itself.
 
 ## Output
 

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: rewrite-landing-text
+expected_outcome: |
+  Überarbeiteter Text ohne die typischen Regelverstöße, mit Menschen als Handelnden, kurzen Sätzen und ohne erfundene Zahlen.
+context:
+  scaffold_script: place-files.sh

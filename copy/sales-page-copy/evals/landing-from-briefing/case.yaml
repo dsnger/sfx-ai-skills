@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: landing-from-briefing
+expected_outcome: |
+  Konzept als Leserkette und vollständige Texte, ohne erfundene Fakten, mit offenen Punkten als Platzhalter und ohne den Wortlaut des Auftraggebers zu übernehmen.
+context:
+  scaffold_script: place-files.sh

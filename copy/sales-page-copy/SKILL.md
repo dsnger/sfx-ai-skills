@@ -51,6 +51,13 @@ Required companions:
 
 For presentations, the same chain applies per slide group: one statement per slide, a recognizable transition between slides.
 
+## Entry and buttons
+
+- **Message match.** Readers arrive with a promise in their head (ad, email, link, search result). That promise comes back in the H1 in the same sense. If it is missing on arrival, readers leave before the chain starts. Ask the client where the traffic comes from if it's unclear.
+- **Buttons say what the reader gets.** Action verb plus what they receive, plus a qualifier if needed ("Kostenloses Erstgespräch vereinbaren", "Beispielseite ansehen"). Never generic labels like "Absenden", "Mehr erfahren", "Hier klicken", "Jetzt starten". Every button on the page leads to the same next step unless the chain needs a smaller one.
+
+*Button formula adapted from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT), message match from [kostja94/marketing-skills](https://github.com/kostja94/marketing-skills) (MIT).*
+
 ## Working with the client
 
 - **Every instruction immediately becomes a checklist item**, then implement or ask specifically. Decide yourself what can be derived from the project, research or context. Do tasks like "take this as inspiration" right away.
