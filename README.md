@@ -20,6 +20,8 @@ Third-party skills and tools these skills build on or are used alongside.
 | Hallmark | Anti-AI-slop design skill with `sloplint` | [GitHub](https://github.com/Nutlope/hallmark) |
 | Taste Skill | Opinionated design system skill with copy and layout checks | [GitHub](https://github.com/Leonxlnx/taste-skill) |
 | Design Slop Cop | Scores websites for AI design patterns | [GitHub](https://github.com/AdrianKrebs/design-slop-cop) |
+| Apple Design Skill (dickwu) | Apple-style design guidance | [GitHub](https://github.com/dickwu/apple-design-skill) |
+| Apple Design (Emil Kowalski) | Apple-style design and motion guidance, part of Emil Kowalski's skills | [GitHub](https://github.com/emilkowalski/skills/tree/main/skills/apple-design) |
 
 ## Installation
 
