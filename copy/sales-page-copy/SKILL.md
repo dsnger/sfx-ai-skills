@@ -10,7 +10,7 @@ Guiding idea: **reader chain**. Every stage of the page answers exactly the ques
 Required companions:
 - `copy-rules` for every sentence (stance, language, banned patterns, sentence checker).
 - `copy-review-panel` for the review rounds in step 5.
-- [references/page-types.md](references/page-types.md) for proven page structures and pricing logic.
+- [references/page-types.md](references/page-types.md) for proven page structures and pricing logic, if available.
 
 ## Steps
 
@@ -45,7 +45,7 @@ Required companions:
 | Trust | Can they do it? Can I trust them? | Industry knowledge, real proof (reference with link, screenshot), proof at hand-off (checklist). |
 | Contract | Am I taking a risk? | Costs, term, rights, named contact person. |
 | Process | Do I have time for this? | Steps as they really run (analysis, draft with approval, review, introduction), the reader's share, second button. |
-| Prices | Is it worth it? | Transition to the benefit, rent/buy switch, one number per package, invite comparison with today's costs. Include everything the reader would otherwise pay extra. |
+| Prices | Is it worth it? | Transition to the benefit, one clear number per package, invite comparison with today's costs. Include everything the reader would otherwise pay extra. |
 | Objections | And what if …? | Five or seven questions titled "Häufig gestellte Fragen", each starting with yes/no or the clear answer; one honest answer on guarantees of success. |
 | Close | What's the next step? | Conversation with a named contact person (no phone as channel), free, without obligation. |
 
