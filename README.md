@@ -21,6 +21,7 @@ Third-party skills and tools these skills build on or are used alongside.
 | Taste Skill | Opinionated design system skill with copy and layout checks | [GitHub](https://github.com/Leonxlnx/taste-skill) |
 | Apple Design Skill (dickwu) | Apple-style design guidance | [GitHub](https://github.com/dickwu/apple-design-skill) |
 | Apple Design (Emil Kowalski) | Apple-style design and motion guidance, part of Emil Kowalski's skills | [GitHub](https://github.com/emilkowalski/skills/tree/main/skills/apple-design) |
+| Prototype (Emil Kowalski) | Prototyping skill, part of Emil Kowalski's skills | [GitHub](https://github.com/emilkowalski/skills/tree/main/skills/prototype) |
 
 ## Installation
 
