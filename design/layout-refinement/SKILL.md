@@ -33,12 +33,9 @@ Small layout moves with a big effect. The techniques come from graphic design (p
 
 ## Multi-page and content-heavy layouts
 
-Additional rules when a site has several pages or long content blocks:
-
-- **Same function, same form.** Sections with the same content and task (process, FAQ, contact, review) look identical on main and sub pages. No special design per page; readers recognize the pattern and find their way faster.
-- **Don't pad sub pages.** What the main page already summarizes is not repeated as its own section on a sub page; sub pages go deeper, not wider.
-- **Long lists as an accordion.** Data sheets or feature lists per area as an accordion, values right-aligned, the most important area open by default.
-- **Sticky heading for long right columns.** For long content like FAQ or contract terms, keep the section heading standing on the left while the content scrolls on the right.
+- **Same function, same form.** Sections with the same content and task look the same on every page of a site. Readers recognize the pattern and find their way faster.
+- **Sub pages go deeper, not wider.** What the main page already summarizes is not repeated as its own section on a sub page.
+- **Long content stays scannable.** However long a block gets, readers can see its structure at a glance and jump to what concerns them.
 
 ## Audit: steps
 

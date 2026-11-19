@@ -37,7 +37,7 @@ Project-specific text rules (e.g. a `textregeln.md` in the project) take precede
 - **Transitive verbs need an object.** Not "Sie ändern sofort selbst", but "Änderungen erledigen Sie sofort selbst".
 - **Language logic.** Does the question fit the answer? Does every "darum", "dafür", "dort", "diese" have a clear reference? No "darum" after a question.
 - **Time logic.** No skewed time statements ("um Technik kümmern wir uns nach dem Start").
-- **No tool or jargon names.** No Lighthouse, W3C, SEO, sitemap, structured data. Say what is done and what the reader gains ("Wir messen, wie schnell Ihre Website lädt"). Seals and badges in plain language ("Optimierte Ladezeit", "Barrierefrei", "DSGVO-konform"); technical names at most on hover.
+- **No tool or jargon names.** No Lighthouse, W3C, SEO, sitemap, structured data. Say what is done and what the reader gains ("Wir messen, wie schnell Ihre Website lädt").
 - **Don't describe what is visible.** No sentence repeats what layout, cards, steps or images already show ("Wir bieten drei Pakete an" above three price cards). Every sentence adds information or a reason.
 - **Three, five or seven.** Per semantic unit (list, card, accordion, argument block) never more than seven points, and only three, five or seven. Combine and shorten instead.
 - **Positive and lively.** Moderate adjectives on the service ("persönliche Einführung", "einfach", "jederzeit"), not exaggerated, not silly, no assumed feelings. Not "kurzer Termin" or "Videotermin" but "persönliche Einführung im Video-Call". Never offer what can't be delivered.
