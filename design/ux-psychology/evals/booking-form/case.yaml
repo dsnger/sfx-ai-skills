@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: booking-form
+expected_outcome: |
+  Neues Buchungsformular mit sinnvollen Vorbelegungen, ergebnisnennendem Button und ohne vorausgewählte Einwilligungen.
+
+

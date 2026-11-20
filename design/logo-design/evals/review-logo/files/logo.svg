@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+<circle cx="100" cy="90" r="80" fill="none" stroke="#3b2a1a" stroke-width="2"/>
+<path d="M100 30 L100 40 L100 50 L100 60 C 70 60 60 80 60 90 C 60 91 60 92 60 93 C 60 120 80 150 100 150 C 101 150 102 150 103 150 C 125 150 140 120 140 90 L140 89 L140 88 C 140 70 125 30 100 30 Z" fill="#3b2a1a"/>
+<path d="M100 40 C 90 70 110 110 100 140 L100 141 L100 142" fill="none" stroke="#fff" stroke-width="3"/>
+<text x="100" y="215" font-family="Brush Script MT, cursive" font-size="22" text-anchor="middle" fill="#3b2a1a" font-weight="200">Röstwerk Nord</text>
+</svg>

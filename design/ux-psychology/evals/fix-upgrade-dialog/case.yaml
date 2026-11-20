@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: fix-upgrade-dialog
+expected_outcome: |
+  Überarbeiteter Upgrade-Dialog, der konkret zeigt, was auf dem Spiel steht, den Preis mit Bezug zeigt und ehrlich bleibt.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: audit-signup-flow
+expected_outcome: |
+  Kurzer Bericht mit Score oben, der gesperrte Ergebnisse, Fortschritt bei null, fehlendes Eigenes und leere Felder benennt und ehrliche Lösungen vorschlägt.
+context:
+  scaffold_script: place-files.sh

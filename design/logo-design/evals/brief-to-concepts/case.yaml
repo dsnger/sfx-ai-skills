@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: brief-to-concepts
+expected_outcome: |
+  Konzeptrichtungen mit prüfbaren Anforderungen, mehreren Ansätzen jenseits des Branchenklischees, Ein-Satz-Idee und Test in realen Einsatzorten.
+context:
+  scaffold_script: place-files.sh

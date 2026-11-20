@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: audit-landing-page
+expected_outcome: |
+  Kurzer Bericht mit Score, der überladenen ersten Eindruck, hohen Denkaufwand und das lieblose Formularende benennt.
+context:
+  scaffold_script: place-files.sh

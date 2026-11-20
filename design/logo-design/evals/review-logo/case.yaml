@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: review-logo
+expected_outcome: |
+  Kurze Bewertung mit Score, die Klischee, fehlende kleine Version und unsaubere Konstruktion benennt.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: handover
+expected_outcome: |
+  Übergabe, die jede Datei einem realen Einsatz zuordnet, klare Dateinamen, Beispiele und Hinweise für Druckproben enthält.

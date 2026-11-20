@@ -9,6 +9,8 @@ Agent skills by SmileFX in the open SKILL.md format. Works with Claude, Codex, G
 | [ui-principles](design/ui-principles/SKILL.md) | Audits and refines websites and app screens against principles of good UI (focal point, spacing, typography, color, content, details, motion) |
 | [ui-refinement](design/ui-refinement/SKILL.md) | Finds and fixes 15 detail-level UI/UX mistakes and suggests UX upgrades |
 | [layout-refinement](design/layout-refinement/SKILL.md) | Audits and improves layouts against 7 layout techniques from graphic design |
+| [ux-psychology](design/ux-psychology/SKILL.md) | Audits and improves screens and flows against 9 principles of how people perceive and decide, without dark patterns |
+| [logo-design](design/logo-design/SKILL.md) | Guides logo work from brief to handover and reviews logos against 12 principles |
 
 ## Copy
 
