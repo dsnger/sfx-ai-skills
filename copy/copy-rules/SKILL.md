@@ -78,6 +78,12 @@ Project-specific text rules (e.g. a `textregeln.md` in the project) take precede
 - Kickers or eyebrows above headings
 - Empty yes-questions and salesy tone ("genickt?")
 - Invented numbers, testimonials or promises
+- Summary transitions that recap the previous section before the next point ("Nachdem wir … gesehen haben", "Damit ist klar …")
+- Data sheet tone: "bietet", "ermöglicht", "verfügt über", "ist konfigurierbar" instead of what a person does or gets
+- Vague quantities and hedges ("oft", "viele", "deutlich", "in der Regel") where a concrete figure or claim is possible; without a provable figure, say what happens instead
+- One connected thought chopped into staccato fragments ("Früher manuell. Jetzt automatisch. Das spart Zeit.") instead of one clear sentence
+
+*The last four adapted from [vercel-labs/writing-guidelines](https://github.com/vercel-labs/writing-guidelines) (MIT).*
 
 ## Value-driven wording
 

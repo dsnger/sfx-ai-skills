@@ -32,6 +32,8 @@ Third-party skills and tools these skills build on or are used alongside.
 | Apple Design Skill (dickwu) | Apple-style design guidance | [GitHub](https://github.com/dickwu/apple-design-skill) |
 | Apple Design (Emil Kowalski) | Apple-style design and motion guidance, part of Emil Kowalski's skills | [GitHub](https://github.com/emilkowalski/skills/tree/main/skills/apple-design) |
 | Prototype (Emil Kowalski) | Prototyping skill, part of Emil Kowalski's skills | [GitHub](https://github.com/emilkowalski/skills/tree/main/skills/prototype) |
+| Web Interface Guidelines (Vercel) | Technical front-end checklist: accessibility, focus, forms, animation, i18n; complements the design skills | [GitHub](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines) · [Rules](https://github.com/vercel-labs/web-interface-guidelines) |
+| Writing Guidelines (Vercel) | Docs writing rules; four AI-tell patterns adopted into copy-rules | [GitHub](https://github.com/vercel-labs/writing-guidelines) |
 
 ## Installation
 
