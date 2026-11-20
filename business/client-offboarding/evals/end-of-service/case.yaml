@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: end-of-service
+expected_outcome: |
+  Abschlussdokument mit Daten, was wann endet, Übergabe-Checkliste, Entzug von Lizenzen und Zugängen, Backup und Löschung, freundlichem Abschluss ohne Druck.
+context:
+  scaffold_script: place-files.sh

@@ -20,6 +20,12 @@ Agent skills by SmileFX in the open SKILL.md format. Works with Claude, Codex, G
 | [sales-page-copy](copy/sales-page-copy/SKILL.md) | Sales pages, landing pages and pitch presentations end to end: instruction checklist, reader chain, copy, review rounds, hand-off |
 | [copy-review-panel](copy/copy-review-panel/SKILL.md) | Independent reviewer panel for copy: personas, sales psychology expert, client reviewer, behavior test, debate with referee |
 
+## Business
+
+| Skill | What it does |
+| --- | --- |
+| [client-offboarding](business/client-offboarding/SKILL.md) | Project handover and end-of-service documents for web projects, in the name of any sender (own brand, agency, white label) |
+
 ## External skills we use
 
 Third-party skills and tools these skills build on or are used alongside.
