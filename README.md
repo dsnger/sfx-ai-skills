@@ -25,6 +25,13 @@ Agent skills by SmileFX in the open SKILL.md format. Works with Claude, Codex, G
 | Skill | What it does |
 | --- | --- |
 | [client-offboarding](business/client-offboarding/SKILL.md) | Project handover and end-of-service documents for web projects, in the name of any sender (own brand, agency, white label) |
+| [website-report](business/website-report/SKILL.md) | Project, quality and follow-up reports for websites in plain language, from check results |
+
+## Web
+
+| Skill | What it does |
+| --- | --- |
+| [launch-check](web/launch-check/SKILL.md) | Checks before go-live, on launch day and after launch, with a findings list and raw data |
 
 ## External skills we use
 

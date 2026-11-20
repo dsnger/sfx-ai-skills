@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: prelaunch-files
+expected_outcome: |
+  Befundliste mit Status und Schwere, Blockern zuerst, nicht Prüfbarem als nicht geprüft und klarer Aussage zur Live-Reife.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,9 @@
+# curl -sI https://www.tischlerei-beispiel.de/  (20.11.2026 10:12)
+HTTP/2 200
+server: nginx/1.18.0
+x-powered-by: PHP/8.1.2
+content-type: text/html; charset=UTF-8
+x-robots-tag: noindex, nofollow
+strict-transport-security: max-age=31536000
+# curl -sI http://tischlerei-beispiel.de/
+HTTP/1.1 200 OK

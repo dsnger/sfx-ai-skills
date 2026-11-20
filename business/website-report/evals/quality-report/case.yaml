@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: quality-report
+expected_outcome: |
+  Qualitätsbericht aus Messdaten mit Quellen und Zeitpunkten, ehrlicher Streuung, Ursache vor Empfehlung und datenbasierten Empfehlungen.
+context:
+  scaffold_script: place-files.sh

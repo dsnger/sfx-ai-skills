@@ -1,0 +1,8 @@
+WP Health Checker, 03.11.2026 09:40, Ergebnis: Note B, 81/100, 33 Prüfungen
+- Sensible Dateien (.env, wp-config.php, debug.log, .git): nicht erreichbar
+- Benutzer-Enumeration über /?author=1: möglich (offen)
+- XML-RPC: aktiv
+- Verzeichnislisten: deaktiviert
+- Versionskennungen: WordPress-Version sichtbar im Quelltext
+- HTTPS-Weiterleitung: aktiv
+- Sicherheitsheader: 4 von 6 gesetzt (fehlen: Content-Security-Policy, Permissions-Policy)

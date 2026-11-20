@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: check-plan
+expected_outcome: |
+  Vollständiger Prüfplan mit Werkzeugen, wiederholten Messungen, Feld- und Labordaten, Search Console, Sicherheit, Consent, Weiterleitungen und Dokumentation von Zeitpunkt und Version.

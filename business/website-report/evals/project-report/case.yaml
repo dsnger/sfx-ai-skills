@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: project-report
+expected_outcome: |
+  Projektbericht mit gruppierten Maßnahmen, Messwerten mit Schwellen, getrennten offenen Punkten und ohne unbelegte Vergleichsbehauptungen.
+context:
+  scaffold_script: place-files.sh
