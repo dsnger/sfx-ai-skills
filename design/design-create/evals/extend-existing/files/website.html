@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kostenrechner Website-Pakete</title>
+<style>
+  :root{
+    --bg:#f4f2ee; --surface:#ffffff; --surface-2:#ebe7e0; --ink:#1d1b18; --muted:#6b655c;
+    --accent:#2f5d50; --accent-ink:#ffffff; --accent-soft:#dce8e3; --radius:16px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  .wrap{max-width:1040px;margin:0 auto;padding:56px 24px 80px}
+  header h1{font-size:clamp(2rem,4vw,2.8rem);line-height:1.1;margin:0 0 12px;letter-spacing:-.02em}
+  header p{margin:0;color:var(--muted);max-width:56ch;font-size:1.05rem}
+  h2{font-size:1.15rem;margin:0 0 16px}
+  .step{margin-top:48px}
+  .step-label{font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
+  .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .pkg{position:relative;cursor:pointer;display:block}
+  .pkg input{position:absolute;opacity:0;pointer-events:none}
+  .pkg-body{background:var(--surface);border-radius:var(--radius);padding:24px;height:100%;transition:background .15s,transform .15s;display:flex;flex-direction:column;gap:12px}
+  .pkg:hover .pkg-body{transform:translateY(-2px)}
+  .pkg input:checked + .pkg-body{background:var(--accent);color:var(--accent-ink)}
+  .pkg input:checked + .pkg-body .pkg-desc,.pkg input:checked + .pkg-body li{color:#d9e6e1}
+  .pkg input:focus-visible + .pkg-body{outline:3px solid var(--accent);outline-offset:3px}
+  .pkg-name{font-weight:700;font-size:1.2rem}
+  .pkg-price{font-size:1.8rem;font-weight:700;letter-spacing:-.02em}
+  .pkg-price small{font-size:.9rem;font-weight:500}
+  .pkg-desc{color:var(--muted);margin:0;font-size:.95rem}
+  .pkg ul{margin:0;padding-left:18px;font-size:.92rem}
+  .pkg li{color:var(--muted);margin:2px 0}
+  .badge{align-self:flex-start;background:var(--accent-soft);color:var(--accent);font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:999px}
+  .pkg input:checked + .pkg-body .badge{background:rgba(255,255,255,.18);color:#fff}
+  .addon{display:flex;gap:16px;align-items:center;background:var(--surface);border-radius:var(--radius);padding:20px 24px;cursor:pointer}
+  .addon-text{flex:1}
+  .addon-text strong{display:block;font-size:1.05rem}
+  .addon-text span{color:var(--muted);font-size:.95rem}
+  .addon-price{font-weight:700;white-space:nowrap}
+  .switch{position:relative;width:52px;height:30px;flex:none}
+  .switch input{opacity:0;width:0;height:0;position:absolute}
+  .slider{position:absolute;inset:0;background:var(--surface-2);border-radius:999px;transition:background .15s}
+  .slider::before{content:"";position:absolute;width:24px;height:24px;left:3px;top:3px;background:#fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.2);transition:transform .15s}
+  .switch input:checked + .slider{background:var(--accent)}
+  .switch input:checked + .slider::before{transform:translateX(22px)}
+  .switch input:focus-visible + .slider{outline:3px solid var(--accent);outline-offset:3px}
+  .summary{margin-top:48px;background:var(--ink);color:#fff;border-radius:var(--radius);padding:32px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end}
+  .summary dl{margin:0;display:grid;grid-template-columns:auto auto;gap:6px 32px;font-size:.98rem}
+  .summary dt{color:#b9b3aa}
+  .summary dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}
+  .total{text-align:right}
+  .total .label{color:#b9b3aa;font-size:.9rem}
+  .total .value{font-size:clamp(2rem,5vw,3rem);font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .total .monthly{color:#b9b3aa;font-size:.95rem;font-variant-numeric:tabular-nums}
+  .note{color:var(--muted);font-size:.85rem;margin-top:12px}
+  .newsletter{margin-top:64px;background:var(--accent-soft);border-radius:var(--radius);padding:40px 32px}
+  .newsletter p{color:var(--muted);margin:0 0 20px;max-width:52ch}
+  .nl-form{display:flex;flex-wrap:wrap;gap:12px}
+  .nl-form input[type=email]{flex:1 1 260px;font:inherit;padding:14px 16px;border:0;border-radius:12px;background:#fff;color:var(--ink)}
+  .nl-form input[type=email]:focus{outline:3px solid var(--accent);outline-offset:1px}
+  .btn{font:inherit;font-weight:600;padding:14px 24px;border:0;border-radius:12px;background:var(--accent);color:#fff;cursor:pointer}
+  .btn:hover{background:#244a40}
+  .consent{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-size:.88rem;color:var(--muted)}
+  .consent input{margin-top:3px;accent-color:var(--accent)}
+  .msg{margin-top:14px;font-weight:600;min-height:1.5em}
+  .msg.error{color:#a3341f}
+  .msg.ok{color:var(--accent)}
+  @media (max-width:640px){
+    .summary{grid-template-columns:1fr}
+    .total{text-align:left}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <h1>Was kostet Ihre Website?</h1>
+    <p>Wählen Sie ein Paket und optional die Wartung. Der Preis wird sofort berechnet, alle Angaben netto zzgl. MwSt.</p>
+  </header>
+
+  <section class="step" aria-labelledby="h-pkg">
+    <div class="step-label">Schritt 1</div>
+    <h2 id="h-pkg">Paket wählen</h2>
+    <div class="packages" role="radiogroup">
+      <label class="pkg">
+        <input type="radio" name="package" value="basis" data-price="990" data-name="Basis">
+        <div class="pkg-body">
+          <div class="pkg-name">Basis</div>
+          <div class="pkg-price">990 € <small>einmalig</small></div>
+          <p class="pkg-desc">Der schnelle, saubere Auftritt für den Start.</p>
+          <ul><li>Bis zu 5 Seiten</li><li>Responsive Design</li><li>Kontaktformular</li><li>SEO-Grundeinrichtung</li></ul>
+        </div>
+      </label>
+      <label class="pkg">
+        <input type="radio" name="package" value="business" data-price="2490" data-name="Business" checked>
+        <div class="pkg-body">
+          <span class="badge">Beliebt</span>
+          <div class="pkg-name">Business</div>
+          <div class="pkg-price">2.490 € <small>einmalig</small></div>
+          <p class="pkg-desc">Für Unternehmen, die online Kunden gewinnen wollen.</p>
+          <ul><li>Bis zu 12 Seiten</li><li>Individuelles Design</li><li>Blog oder News-Bereich</li><li>Erweiterte SEO und Tracking</li></ul>
+        </div>
+      </label>
+      <label class="pkg">
+        <input type="radio" name="package" value="premium" data-price="4990" data-name="Premium">
+        <div class="pkg-body">
+          <div class="pkg-name">Premium</div>
+          <div class="pkg-price">4.990 € <small>einmalig</small></div>
+          <p class="pkg-desc">Maßgeschneidert, mit Funktionen nach Ihrem Bedarf.</p>
+          <ul><li>Unbegrenzte Seiten</li><li>UX-Konzept und Workshop</li><li>Mehrsprachigkeit</li><li>Schnittstellen und Sonderfunktionen</li></ul>
+        </div>
+      </label>
+    </div>
+  </section>
+
+  <section class="step" aria-labelledby="h-addon">
+    <div class="step-label">Schritt 2</div>
+    <h2 id="h-addon">Wartung hinzufügen</h2>
+    <label class="addon" for="maintenance">
+      <div class="addon-text">
+        <strong>Wartungspaket</strong>
+        <span>Updates, Backups, Sicherheitsprüfung und kleine Änderungen. Monatlich kündbar.</span>
+      </div>
+      <div class="addon-price">49 € / Monat</div>
+      <span class="switch">
+        <input type="checkbox" id="maintenance" data-price="49">
+        <span class="slider"></span>
+      </span>
+    </label>
+  </section>
+
+  <section class="summary" aria-live="polite" aria-label="Kostenübersicht">
+    <dl>
+      <dt>Paket</dt><dd id="sum-pkg">-</dd>
+      <dt>Einmalige Kosten</dt><dd id="sum-once">-</dd>
+      <dt>Wartung</dt><dd id="sum-maint">-</dd>
+      <dt>Kosten im 1. Jahr</dt><dd id="sum-year">-</dd>
+    </dl>
+    <div class="total">
+      <div class="label">Einmalig</div>
+      <div class="value" id="total">-</div>
+      <div class="monthly" id="monthly"></div>
+    </div>
+  </section>
+  <p class="note">Alle Preise netto zzgl. 19 % MwSt. Unverbindliche Schätzung, das genaue Angebot folgt nach einem kurzen Gespräch.</p>
+
+  <section class="newsletter" aria-labelledby="h-nl">
+    <h2 id="h-nl">Tipps für Ihre Website, einmal im Monat</h2>
+    <p>Praxiswissen zu Design, Sichtbarkeit und Technik. Kein Spam, jederzeit abbestellbar.</p>
+    <form class="nl-form" id="nl-form" novalidate>
+      <label for="nl-email" class="sr-only" style="position:absolute;left:-9999px">E-Mail-Adresse</label>
+      <input type="email" id="nl-email" name="email" placeholder="ihre@email.de" autocomplete="email" required>
+      <button class="btn" type="submit">Anmelden</button>
+    </form>
+    <label class="consent">
+      <input type="checkbox" id="nl-consent">
+      <span>Ich möchte den Newsletter erhalten und habe die Datenschutzerklärung gelesen. Die Einwilligung kann ich jederzeit widerrufen.</span>
+    </label>
+    <div class="msg" id="nl-msg" role="status"></div>
+  </section>
+</main>
+
+<script>
+  const fmt = n => n.toLocaleString('de-DE') + ' €';
+  const pkgs = document.querySelectorAll('input[name="package"]');
+  const maint = document.getElementById('maintenance');
+
+  function update(){
+    const sel = document.querySelector('input[name="package"]:checked');
+    const once = Number(sel.dataset.price);
+    const monthly = maint.checked ? Number(maint.dataset.price) : 0;
+    document.getElementById('sum-pkg').textContent = sel.dataset.name;
+    document.getElementById('sum-once').textContent = fmt(once);
+    document.getElementById('sum-maint').textContent = monthly ? fmt(monthly) + ' / Monat' : 'nicht gewählt';
+    document.getElementById('sum-year').textContent = fmt(once + monthly * 12);
+    document.getElementById('total').textContent = fmt(once);
+    document.getElementById('monthly').textContent = monthly ? 'plus ' + fmt(monthly) + ' im Monat' : 'ohne laufende Kosten';
+  }
+  pkgs.forEach(p => p.addEventListener('change', update));
+  maint.addEventListener('change', update);
+  update();
+
+  document.getElementById('nl-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const email = document.getElementById('nl-email');
+    const consent = document.getElementById('nl-consent');
+    const msg = document.getElementById('nl-msg');
+    msg.className = 'msg';
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())){
+      msg.textContent = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.'; msg.classList.add('error'); email.focus(); return;
+    }
+    if(!consent.checked){
+      msg.textContent = 'Bitte bestätigen Sie die Einwilligung.'; msg.classList.add('error'); consent.focus(); return;
+    }
+    msg.textContent = 'Danke! Bitte bestätigen Sie die Anmeldung über den Link in Ihrer E-Mail.'; msg.classList.add('ok');
+    e.target.reset(); consent.checked = false;
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: library-settings
+expected_outcome: |
+  Einstellungsseite im vorhandenen Tailwind/shadcn-System, Anpassungen über Tokens und Klassen statt Overrides.
+context:
+  scaffold_script: place-files.sh

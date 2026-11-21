@@ -34,7 +34,7 @@ Good and AI-generated interfaces often use the same components. The difference c
 | 6 | Details | Radius, shadows and icons consistent everywhere | Harsh edges, one heavy blur shadow, icons a few pixels off | Consistent radius, nested elements slightly smaller than their container, soft layered shadows, icons same size and stroke on the text baseline, shared edges |
 | 7 | Motion | Motion starts where the user acted | No transitions, or everything fades up the same way | Dropdowns grow from their button, opening slightly slower than closing, notifications slide in from the edge and stack, sheets follow the finger, short ease-out animations |
 
-Calibration references: Linear homepage (focal point), Stripe Checkout (spacing), Notion (color), iPhone notification (details), Apple Maps bottom sheet (motion).
+Calibration examples: a calm product homepage with one headline and one button (focal point), a checkout form with tight, grouped fields (spacing), a mostly neutral workspace app with one accent (color), a phone notification with matching radius and shadow (details), a bottom sheet that follows the finger (motion).
 
 ## Audit: steps
 
@@ -91,6 +91,6 @@ Then run the audit again and report the before/after score.
 
 ## Further reading
 
-- Motion: "transitions" and Emil Kowalski's animation skills.
+- Motion: dedicated animation and transition skills, if installed.
 - For deeper, measurable checks: Impeccable (`detect`, `critique`, `audit`) or Hallmark (`sloplint`).
 - For composition and layout: the `layout-refinement` skill.

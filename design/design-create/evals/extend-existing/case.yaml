@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: extend-existing
+expected_outcome: |
+  Neue Bereiche fügen sich in Farben, Schrift, Radien und Layout der bestehenden Seite ein.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: landing-page
+expected_outcome: |
+  Kurzer Gesamtbericht mit Fokus auf erstem Eindruck, Ordnung, Formularende und Ehrlichkeit.
+context:
+  scaffold_script: place-files.sh

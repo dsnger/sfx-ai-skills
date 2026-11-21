@@ -30,13 +30,14 @@ Pick the phase from the request; run every check that applies to it and say whic
 | Area | Check |
 | --- | --- |
 | **Search engines** | Staging block removed on the live site (CMS setting, `noindex`, `robots.txt`), staging itself stays blocked; sitemap reachable; canonical tags point to the live domain |
-| **Domain and HTTPS** | Valid certificate, HTTP and the non-canonical host (with or without www) redirect permanently to one address, no mixed content (HTTP resources on HTTPS pages) |
+| **Domain and HTTPS** | Valid certificate, HTTP, the non-canonical host (with or without www) and all additional or former domains redirect permanently to the matching address, no mixed content (HTTP resources on HTTPS pages) |
 | **Content** | No sample content or placeholder text, no test pages, titles and descriptions set, favicon and preview image (Open Graph) present, custom 404 page |
-| **Redirects and links** (relaunch) | Old URLs redirect permanently to the matching new ones, no broken internal links |
+| **Redirects and links** (relaunch) | Old URLs redirect permanently to the matching new ones, no broken internal links; decided what happens to the old site (protected, non-indexed archive or switched off) |
 | **Forms** | Every form sends, arrives at the right address, shows a confirmation, has spam protection |
-| **Legal and consent** | Imprint and privacy pages present and linked everywhere; consent banner with equal accept and reject; tracking and third-party content load only after consent |
+| **Legal and consent** | Imprint and privacy pages present and linked everywhere; privacy and cookie information names exactly the services, cookies and trackers the site actually loads; consent banner with equal accept and reject; tracking and third-party content load only after consent |
 | **Configuration** | Debug mode and error display off, versions not exposed, no exposed sensitive files or directory listings, user enumeration blocked, unused interfaces (e.g. XML-RPC) off, admin accounts personal and with strong passwords, security headers set |
 | **Interface quality** | Findings against the Web Interface Guidelines: accessibility (labels, alt texts, keyboard use, contrast), focus states, forms, animation, typography, content handling, images. Use the `web-design-guidelines` skill if installed, otherwise its rule list ([vercel-labs/web-interface-guidelines](https://github.com/vercel-labs/web-interface-guidelines)) |
+| **Images** | Compressed, in modern formats, sized for their slot, loaded lazily below the first screen |
 | **Operations** | Backups run and a restore is possible, uptime monitoring active, updates planned, caching on |
 | **Analytics and Search Console** | Property verified, sitemap submitted, analytics receives data after consent |
 

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Rechnungen</title>
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:#f4f5f7;color:#1d2330}
+.side{position:fixed;left:0;top:0;bottom:0;width:220px;background:#fff;border-right:1px solid #e3e5ea;padding:16px}
+.side a{display:block;padding:8px 10px;color:#a4a9b4;text-decoration:none;font-size:13px}
+.side a.active{color:#2f5bea}
+main{margin-left:240px;padding:24px}
+.toolbar{display:flex;gap:8px;margin-bottom:16px}
+.toolbar input{padding:8px;border:1px solid #d5d8de;border-radius:6px;width:260px}
+.btn{padding:8px 14px;border-radius:6px;border:1px solid #d5d8de;background:#fff;font-size:13px}
+.btn.primary{background:#2f5bea;color:#fff;border:0}
+.icon{width:20px;height:20px;padding:0;border:0;background:none;font-size:12px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e3e5ea}
+th,td{padding:10px;text-align:left;font-size:13px;border-bottom:1px solid #e3e5ea}
+th{color:#a4a9b4;text-transform:uppercase;letter-spacing:.08em;font-size:11px}
+.card{border:1px solid #e3e5ea;border-radius:12px;background:#fff;padding:16px;margin-bottom:16px;display:flex;gap:16px}
+.stat{flex:1}
+.stat b{font-size:28px;background:linear-gradient(90deg,#2f5bea,#9b4dff);-webkit-background-clip:text;color:transparent}
+.status-open{color:#e5484d}.status-paid{color:#30a46c}
+</style>
+</head>
+<body>
+<nav class="side">
+  <a href="#">Dashboard</a><a href="#">Kunden</a><a href="#">Projekte</a><a href="#">Angebote</a>
+  <a class="active" href="#">Rechnungen</a><a href="#">Zahlungen</a><a href="#">Mahnungen</a><a href="#">Berichte</a>
+  <a href="#">Export</a><a href="#">Vorlagen</a><a href="#">Einstellungen</a><a href="#">Hilfe</a><a href="#">Abmelden</a>
+</nav>
+<main>
+  <div class="card">
+    <div class="stat">Offen<br><b>12.480 €</b></div>
+    <div class="stat">Überfällig<br><b>3.120 €</b></div>
+    <div class="stat">Bezahlt (Monat)<br><b>28.900 €</b></div>
+    <div class="stat">Rechnungen<br><b>146</b></div>
+  </div>
+  <div class="toolbar">
+    <input placeholder="Suchen...">
+    <button class="btn">Filter</button>
+    <button class="btn">Exportieren</button>
+    <button class="btn">✨ KI-Zusammenfassung an Kunden senden</button>
+    <button class="btn primary">Neue Rechnung</button>
+    <button class="btn primary">Mahnlauf starten</button>
+  </div>
+  <table>
+    <thead><tr><th><input type="checkbox"></th><th>Nr.</th><th>Kunde</th><th>Datum</th><th>Betrag</th><th>Status</th><th></th></tr></thead>
+    <tbody>
+      <tr><td><input type="checkbox"></td><td>2026-0146</td><td>Muster GmbH</td><td>12.11.2026</td><td>1.240,00</td><td class="status-open">●</td><td><button class="icon">✎</button><button class="icon" onclick="confirm('Wirklich löschen?')">🗑</button></td></tr>
+      <tr><td><input type="checkbox"></td><td>2026-0145</td><td>Beispiel AG</td><td>10.11.2026</td><td>18.900,00</td><td class="status-paid">●</td><td><button class="icon">✎</button><button class="icon" onclick="confirm('Wirklich löschen?')">🗑</button></td></tr>
+      <tr><td><input type="checkbox"></td><td>2026-0144</td><td>Demo KG</td><td>08.11.2026</td><td>320,50</td><td class="status-open">●</td><td><button class="icon">✎</button><button class="icon" onclick="confirm('Wirklich löschen?')">🗑</button></td></tr>
+    </tbody>
+  </table>
+  <!-- Massenaktionen: Auswahl zeigt keine Anzahl und keine Aktionen; "Alle auswählen" ist unklar. Kein Leer-, Lade- oder Fehlerzustand vorhanden. -->
+</main>
+</body>
+</html>

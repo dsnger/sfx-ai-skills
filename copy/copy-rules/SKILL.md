@@ -39,6 +39,8 @@ Project-specific text rules (e.g. a `textregeln.md` in the project) take precede
 | **Name the reader's real goal.** More customers, more bookings, less work. Not a means like "found on Google" | Means are not motivating, results are | Is this the goal or only a tool? |
 | **No constructed scenes.** No invented evenings, people or story examples. Invented names only in clearly labeled example graphics | Staged scenes feel fake | Did this actually happen? |
 | **Honest about limits.** No ranking guarantees, nothing that can't be in a contract | Overpromising costs credibility later | Could this be written into a contract? |
+| **Inform before offering.** Readers recognize their gap themselves before an offer comes; pains are named openly, never dramatized | Fear and pressure create resistance | Does the reader see the problem before the solution, without being scared? |
+| **Competition only with evidence.** Argue with competitive pressure only if the market situation is proven; otherwise creating demand is often the stronger argument | Assumed pressure sounds like a sales trick | Is there proof that competitors really do this? |
 | **No jabs at your own industry** ("typical agency trouble") if the sender is part of it. Pick up worries as a question | Jabs backfire on the sender | Would a colleague feel attacked? |
 
 ## Sentences and language
@@ -57,6 +59,7 @@ Project-specific text rules (e.g. a `textregeln.md` in the project) take precede
 - **Don't promise the obvious.** What every customer expects anyway (own page title, site goes live only when finished, bugs get fixed) is never a feature, guarantee or checkpoint. It raises the suspicion it might be different otherwise. Check question: Would a customer assume the opposite? If not, delete.
 - **Improving never means lengthening.** A correction makes a sentence clearer or stronger, not longer. If a block now outgrows its counterpart (image, demo), the correction was wrong.
 - **Contrast with stakes.** In "advantage / instead of" lines both sides need attractive, concrete words: "in Ihren eigenen Worten" vs. "verschachtelte Menüs und komplizierte Einstellungen". Sell simplicity, not brevity.
+- **Headings are concrete statements or real questions**, never buzzwords ("Sicherheit", "Mehrwert").
 - **Neutral standard terms instead of groups of people.** "Häufig gestellte Fragen", not "Was Inhaber uns fragen".
 - **Describe processes as they really run.** No "Sie wählen das Design" if there is one targeted draft. Step headings must never mislead.
 - **Price headings with value, never as a cost question.** "Ihre Rundum-sorglos-Website zum festen Preis", not "Was zahlen Sie heute …?". Comparison questions at most small, below the prices.

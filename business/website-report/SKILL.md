@@ -31,7 +31,9 @@ Pick the type from the request; if unclear, ask once.
 - **Every number with source and date.** Scales and thresholds sit next to the values ("Werte ab 90 gelten als sehr gut"; "Google-Schwelle gut: höchstens 2,5 s").
 - **Honest about measurement.** Name what the numbers can and can't say: lab vs real-user data, variance between runs (report the range and which run is shown and why), short periods, early relaunch effects.
 - **Judgements follow from data.** No unprovable comparisons ("faster than most", "top values"), no superlatives, also not when the client asks for them; offer a provable alternative instead.
-- **Cause before recommendation.** Explain where a problem comes from, then what follows from it.
+- **Compare with the site's own best values** instead of outside comparisons (a weak page against the best page of the same site); that is provable and shows the potential.
+- **Cause before recommendation.** Explain where a problem comes from, then what follows from it, including which future changes would make it worse. If a remaining gap to the top score isn't worth chasing, say why (effort against benefit).
+- **Baseline:** state that the values serve as the baseline for the next report and when a repeat measurement becomes meaningful.
 - **Recommendations from the data:** each points to the finding behind it (a page with many impressions and few clicks, a topic just below page one). Content, technical next steps and ongoing operation are separate groups.
 - **Open points separate** from what is done, with who handles them if known.
 - **Sender and recipient** as given; in white label work only the sender's name appears.
