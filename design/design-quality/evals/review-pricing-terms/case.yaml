@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: review-pricing-terms
+expected_outcome: |
+  Bericht fordert ehrliche Preisangaben mit Laufzeit und Gesamtbetrag.
+context:
+  scaffold_script: place-files.sh

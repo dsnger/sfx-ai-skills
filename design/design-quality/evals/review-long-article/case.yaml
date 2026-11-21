@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: review-long-article
+expected_outcome: |
+  Bericht wendet Lesbarkeit langer Inhalte an und erfindet keinen Call to Action.
+context:
+  scaffold_script: place-files.sh

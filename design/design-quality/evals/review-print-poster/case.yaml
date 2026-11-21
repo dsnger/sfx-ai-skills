@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: review-print-poster
+expected_outcome: |
+  Bericht bewertet Komposition und Lesbarkeit auf Distanz, keine Web-Prüfungen.
+context:
+  scaffold_script: place-files.sh
