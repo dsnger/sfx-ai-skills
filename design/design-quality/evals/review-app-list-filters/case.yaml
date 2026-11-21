@@ -1,5 +1,5 @@
 schema_version: "1.1"
-name: app-list-filters
+name: review-app-list-filters
 expected_outcome: |
   Kurzer Gesamtbericht, der Liste, Karten, Suche und Filter sowie App-Zustände bewertet.
 context:

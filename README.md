@@ -6,8 +6,7 @@ Agent skills by SmileFX in the open SKILL.md format. Works with Claude, Codex, G
 
 | Skill | Purpose |
 | --- | --- |
-| [design-create](design/design-create/SKILL.md) | Guides new pages, screens and components from the first decision on: context, message, information order, inherited look, fixed rules (surfaces not lines, no side accent bars, WCAG 2.2 AA, no dark patterns, libraries such as shadcn/ui and Tailwind used as intended) and a self-check |
-| [design-review](design/design-review/SKILL.md) | One combined review and refinement of existing screens: detects the building blocks and applies only the matching sections, with accessibility, website duties and product sections, a score per section and one short report |
+| [design-quality](design/design-quality/SKILL.md) | One skill to design and review pages, screens and components: mode create decides and builds with a required render and audit self-check, modes audit and fix check and improve existing screens. Same rules for both: surfaces not lines, no side accent bars, WCAG 2.2 AA, no dark patterns, brand and corporate colors fixed, component libraries such as shadcn/ui and Tailwind used as intended |
 | [ui-principles](design/ui-principles/SKILL.md) | Audits and refines websites and app screens against principles of good UI (focal point, spacing, typography, color, content, details, motion) |
 | [ui-refinement](design/ui-refinement/SKILL.md) | Finds and fixes 15 detail-level UI/UX mistakes and suggests UX upgrades |
 | [layout-refinement](design/layout-refinement/SKILL.md) | Audits and improves layouts against 7 layout techniques from graphic design |

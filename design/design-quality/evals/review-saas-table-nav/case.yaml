@@ -1,5 +1,5 @@
 schema_version: "1.1"
-name: saas-table-nav
+name: review-saas-table-nav
 expected_outcome: |
   Kurzer Gesamtbericht für einen Produkt-Screen mit Datentabelle, Navigation, Massenaktionen und einer KI-Funktion, mit blockierenden Barrierefreiheitsfunden zuerst.
 context:

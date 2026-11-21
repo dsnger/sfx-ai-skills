@@ -1,5 +1,5 @@
 schema_version: "1.1"
-name: side-accent-bars
+name: review-side-accent-bars
 expected_outcome: |
   Überarbeiteter Produkt-Screen ohne seitliche Akzentbalken, Zustände über Fläche, Gewicht, Icon oder Label markiert, plus kurzer Bericht.
 context:

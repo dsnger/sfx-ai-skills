@@ -1,4 +1,4 @@
 schema_version: "1.1"
-name: product-projects
+name: create-product-projects
 expected_outcome: |
   Produkt-Screen mit Tabelle, Filtern, Zuständen und Auswahl ohne Seitenbalken.
