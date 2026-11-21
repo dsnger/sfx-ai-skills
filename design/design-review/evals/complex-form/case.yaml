@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: complex-form
+expected_outcome: |
+  Aus einem banalen Formular wird ein gegliedertes, barrierefreies Formular ohne Vorauswahl mit sichtbarer Schätzung.
+context:
+  scaffold_script: place-files.sh

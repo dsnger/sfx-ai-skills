@@ -29,14 +29,14 @@ Write these down in a few lines (in the reply or as a comment) before any markup
 2. **Job of the screen.** Who arrives, what they want, what they should do next. One primary action per view on websites, one per task area in products.
 3. **Information order.** What is needed to decide, in which order; what can wait for a second view; what is left out.
 4. **Building blocks.** Which of the blocks below are on the screen; apply only those.
-5. **System and look.** If anything already exists (a site, an app, a brand, neighbouring sections, a component library), the new part inherits it: colors, type, radii, spacing, imagery and component style, so it looks as if it had always been there. Never introduce a new color mood or style for one section or tool. Corporate design colors are fixed: work with how they are used (which color for text, surfaces, accent; contrast-safe tints and shades derived from them), never replace them. Only when the whole site or product is in scope may color changes be recommended, as a clearly marked suggestion with the reason (for example contrast), not applied. Only when nothing exists, choose a visual direction in one line (mood, palette from neutrals plus one accent, type pairing, one distinctive element) and a small system: one spacing scale, a few type sizes, one radius family. The fixed rules are the floor, not the goal: the result should have character, not just pass checks.
-6. **Layout order.** One clear reading direction. Steps of a flow run top to bottom in one column of one width; elements of the same kind share size, height and alignment; a side summary only where there is room for both columns without cramping either.
+5. **System and look.** If anything already exists (a site, an app, a brand, neighbouring sections, a component library), the new part inherits it: colors, type, radii, spacing, imagery and component style, so it looks as if it had always been there. Never introduce a new color mood or style for one section or tool. Corporate design colors are fixed: work with how they are used (which color for text, surfaces, accent; contrast-safe tints and shades derived from them), never replace them. Only when the whole site or product is in scope may color changes be recommended, as a clearly marked suggestion with the reason (for example contrast), not applied. Only when nothing exists, keep the look calm and conventional: one neutral sans-serif family (the system stack is fine), neutrals plus one accent, one radius family, one spacing scale, a few type sizes. No decorative or display typefaces, no second font, no invented logo or masthead styling. Character comes from order, proportion and one honest highlight, not from effects. The fixed rules are the floor, not the goal.
+6. **Layout order.** One clear reading direction. One content container: header, every section and footer share the same width and the same left edge, so nothing starts at a different inset. Steps of a flow run top to bottom in one column of one width; elements of the same kind share size, height and alignment; use side-by-side columns only where each column keeps a comfortable line length, otherwise stack options as full-width rows (cramped columns that break text into short lines are harder to read and compare); a side summary only where there is room for both columns without cramping either.
 
 ## Step 2: Build with these principles
 
 ### Always
 
-- **Focus.** The first view carries one message and one primary action; everything else is visibly secondary.
+- **Focus.** The first view carries one message and one primary action; everything else is visibly secondary, and secondary actions (newsletter, cancel, back) never use the primary style.
 - **Order and spacing.** Related things sit closer than unrelated ones; one grid and margin; one consistent spacing scale; visual weight spread.
 - **Type.** Hierarchy through weight, size and spacing that fit the brand, never by lowering text contrast; few families; comfortable line height and line length.
 - **Color.** Mostly neutrals tinted toward the brand; the accent only where attention belongs.
@@ -56,7 +56,8 @@ Write these down in a few lines (in the reply or as a comment) before any markup
 - Pre-fill only neutral, likely values; ask what can wait later.
 - Choices that affect each other are visible together; the right control for each value (direct options for known values, slider plus input for ranges).
 - Ask in the user's terms and convert for them.
-- Show the consequence before commit: a live total or count, and a button that names the result.
+- Show the consequence before commit: a live total or count that stays in view while choosing (on wide screens a sticky summary beside the choices, on small screens a compact bar), and a button that names the result and stays within reach of the controls. Before anything is chosen the summary says that nothing is chosen yet instead of showing 0 as if it were a price.
+- Options with a price start unselected; a recommendation may be marked, not preselected.
 - Errors and help at the field; long forms may add an error summary that moves focus.
 
 ### Lists, search and filters
@@ -85,24 +86,22 @@ Write these down in a few lines (in the reply or as a comment) before any markup
 
 - Break the grid only on purpose; edges clearly apart or clearly overlapping; the key message lands at real viewing distance; series share fixed constants.
 
-## Step 3: Self-check before handing over
+## Step 3: Self-check before handing over (required)
 
-Run `design-review` in audit mode if it is available. Otherwise check at least:
+The build is not done until it has been looked at as a finished page, the way a reviewer would see it:
 
-- Fixed rules 1 to 9, with a search of the CSS for one-sided borders, inset side shadows and thin card borders.
-- Contrast of body text, muted text and the accent on its surface.
-- Keyboard order and visible focus.
-- 320 px width and a long title.
-- One primary action per view.
-- The new part matches the existing look, and the layout reads in one clear direction.
+1. **Render it.** Open or screenshot the page at about 1280, 375 and 320 px, full page. Code search alone misses what only shows on the rendered page.
+2. **Check alignment and wrapping.** On every width, header, sections and footer start at the same left edge and share one container width, and no text or value wraps onto short lines in a narrow column or panel.
+3. **Review it.** Run `design-review` in audit mode on the rendered page. If it is not available, check its sections that apply, at least: focus and first view, information order, consequence before commit with the result visible while choosing, action within reach, context kept while scrolling, states, fixed rules 1 to 9, contrast, keyboard pass with visible focus, 320 px without sideways scrolling.
+4. **Fix and repeat** until the audit shows no blocking finding and no failed check that can be fixed without inventing content. What needs facts from the client stays as a marked suggestion.
 
-Fix what fails, then hand over.
+Building and reviewing should arrive at the same result; if the review would still change something, the build is not finished.
 
 ## Output
 
 - Start with the short decision block from step 1, then the build.
 - Code complete and copy-ready in one piece; files as clickable links.
-- End with one line on the self-check (passed, or what remains open and why).
+- End with one line on the self-check: widths rendered, audit scores, and what remains open and why.
 - Keep the reply short, one point per reply.
 
 ## Related

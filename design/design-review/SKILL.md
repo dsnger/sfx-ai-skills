@@ -18,7 +18,7 @@ Fixed rules and the accessibility block are hard requirements. Everything else i
 ## Fixed rules (override everything below)
 
 1. **Everything shown is true.** Progress counts only real steps the user did or confirmed, result counts are real, deadlines exist, losses are the user's actual loss. Missing facts become placeholders, never inventions.
-2. **No dark patterns.** Declining stays easy and neutrally worded; no shaming labels, no hidden close buttons, no invented countdowns or scarcity. Never preselect consent, newsletters, paid extras, data sharing or longer contracts. In consent banners, declining is as easy and visible as accepting.
+2. **No dark patterns.** Declining stays easy and neutrally worded; no shaming labels, no hidden close buttons, no invented countdowns or scarcity. Never preselect consent, newsletters, paid extras, a priced package, data sharing or longer contracts. In consent banners, declining is as easy and visible as accepting.
 3. **Surfaces, not lines.** Cards and tiles get no thin border lines; separate with surfaces and spacing, shadows optional and soft. Borders only on inputs and controls. A transparent outline is allowed as a fallback for forced colors (high contrast mode).
 4. **No side accent bars.** Never mark a card, row, alert, quote or selected item with a thicker colored edge on one side (left or right border, inset shadow, pseudo-element stripe); it is the most typical generic AI pattern. Mark state through the surface itself (a tinted background), weight, an icon or a label. In audits, an existing side bar is a rule violation; in fixes, replace it.
 5. **Brand palette is fixed** if one is given: invent no new hues; only the use of the colors is reviewed. When the whole site or product is reviewed, palette changes may be recommended as a marked suggestion with the reason (for example contrast), never applied. Tints, shades and status colors derived from the palette are fine; meaning never rests on color alone.
@@ -59,9 +59,9 @@ Name the context and the sections you apply in one line at the top of the report
 
 | # | Check | Rule | Typical mistake |
 | --- | --- | --- | --- |
-| A1 | **Focus and first impression** | The first view carries one message, one feeling and one primary action (per view on websites, per task area in products); the first impression colors everything after it | Badges, gradient headline, two equal buttons, stats and feature cards all compete |
+| A1 | **Focus and first impression** | The first view carries one message, one feeling and one primary action (per view on websites, per task area in products); secondary actions (newsletter, cancel, back) use a quieter style than the primary action; the first impression colors everything after it | Badges, gradient headline, two equal buttons, stats and feature cards all compete |
 | A2 | **Low effort and order** | A first-time visitor sees the order of importance and the next step without effort; one primary goal per section; short, predictable navigation | Many equal elements, long menus, several goals per section |
-| A3 | **Spacing and alignment** | One consistent spacing system (for example steps of 4 or 8, or fluid values); related things closer than unrelated ones; one margin and grid for the screen; visual weight spread, not piled in one corner | Same padding everywhere, elements a few pixels off, too much space between related blocks |
+| A3 | **Spacing and alignment** | One consistent spacing system (for example steps of 4 or 8, or fluid values); related things closer than unrelated ones; one margin and grid for the screen, header, sections and footer on the same container width and left edge; visual weight spread, not piled in one corner; columns only where each keeps a comfortable line length, otherwise stacked rows | Same padding everywhere, elements a few pixels off, too much space between related blocks, narrow side-by-side columns that wrap words or values onto short lines |
 | A4 | **Typography** | Clear hierarchy with means that fit the brand (weight, color, spacing, size); few families; comfortable body line height (for example 1.5 to 1.7, denser in tables) and a comfortably short line length | Ever bigger headings, many sizes and styles, hierarchy made by lowering text contrast |
 | A5 | **Color** | Mostly neutrals (tinted toward the brand), saturation and accent only where attention belongs; contrast as in X1 | Gradients and glows everywhere, loud accents on unimportant things |
 | A6 | **Details and consistency** | One shape language (radius, nested elements slightly smaller), soft shadows if any, one icon style, size and stroke, icons optically on the line of their text, subtle or no dividers (tables may need them), no rendering defects (overlaps, clipped text, bands not reaching the edge) | Square and round mixed, heavy dividers, mixed filled and outlined icons, default body margin |
@@ -96,11 +96,11 @@ Hard minimums. A violation is a blocking finding, whatever the score elsewhere. 
 
 | # | Check | Rule | Typical mistake |
 | --- | --- | --- | --- |
-| B1 | **Smart defaults** | Likely neutral choices are pre-filled, options cut to what matters, what can wait is asked later; never prefill consent, paid extras, term or price-relevant quantities | Empty fields, long option lists, every field a decision |
+| B1 | **Smart defaults** | Likely neutral choices are pre-filled, options cut to what matters, what can wait is asked later; never prefill consent, paid extras, term, a priced package or plan, or price-relevant quantities (a recommendation may be marked, not preselected; a preselected priced option breaks rule 2) | Empty fields, long option lists, every field a decision |
 | B2 | **Connected decisions together** | Choices that influence each other are visible at the same time | One page per setting, previous choices invisible |
 | B3 | **Right control for the value** | Known values as direct options (tap "3+"), ranges as slider plus exact input, steppers only for nudging an existing value; "3+" means at least three, and where people are flexible a range between two options is possible | Steppers to reach a known number, free text where a choice fits |
 | B4 | **The user's own terms** | Ask in the terms people know (monthly rate and deposit instead of maximum price, problem instead of product name) and do the conversion for them | Asking for a value people must first calculate |
-| B5 | **Consequence before commit** | The result updates while choosing (live total, count, estimate); the button names the result ("41 Angebote anzeigen", "Termin am Di um 9:30 buchen"); a total may sit in or beside the button, estimates marked as approximate | "Absenden", "Berechnen", outcome only after the click |
+| B5 | **Consequence before commit** | The result updates while choosing and stays in view while choosing (on wide screens a sticky summary beside the choices, on small screens a compact bar); before anything is chosen it says so instead of showing 0 as a price; the button names the result ("41 Angebote anzeigen", "Termin am Di um 9:30 buchen"); a total may sit in or beside the button, estimates marked as approximate | "Absenden", "Berechnen", outcome only after the click |
 | B6 | **Errors and help in place** | Validation inline at the field, help and conditions where the question is asked; long forms may add an error summary that moves focus to it | Errors only in a list, conditions in a footnote |
 | B7 | **Presets and action grouping** | One-tap presets for common values next to the custom control; the primary action sits next to its related controls and stays reachable | Quantity far from the button, action out of view after scrolling |
 
@@ -186,7 +186,7 @@ Hard minimums. A violation is a blocking finding, whatever the score elsewhere. 
 
 1. Look at the screen: desktop and mobile screenshots plus HTML/CSS; the first view without scrolling; for flows also the step before and after; for scroll effects judge end states.
 2. Do step 1: context and building blocks, then the sections that apply.
-3. Stress test: a bright and a busy image, a long or translated title, other content, few and many results, dark mode if offered.
+3. Stress test: a bright and a busy image, a long or translated title, other content, few and many results, dark mode if offered; look for text and values that wrap onto short lines in narrow columns or panels (a failed A3, fixed by stacking or widening).
 4. Keyboard pass: tab through the screen once, watching order, focus visibility and traps.
 5. Rate each applicable check Yes, No or n/a with concrete evidence (element, value, selector), marked as measured, checked or judgment.
 6. Check the fixed rules; any violation goes into the report.
@@ -217,7 +217,7 @@ Rules: no issues
 
 ## Fix: steps
 
-Keep layout and components. Change existing tokens, components and library variants where a system exists; use a separate CSS layer on top of the original only when there is none, so it stays comparable.
+Keep the look: colors, type, components and content stay. The layout may change where a failed check needs it (for example a summary that must stay visible while choosing, or options that are hard to compare side by side); keep one content container with the same left edge for header, sections and footer. Change existing tokens, components and library variants where a system exists; use a separate CSS layer on top of the original only when there is none, so it stays comparable.
 
 1. Accessibility blockers (X).
 2. Focus and first view (A1, A2): one message, one primary action, the rest moved down or grouped; removals only proposed.

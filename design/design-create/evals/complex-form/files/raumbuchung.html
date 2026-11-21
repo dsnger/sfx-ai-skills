@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Raum anfragen</title>
+</head>
+<body>
+<h1>Raum anfragen</h1>
+<form>
+Vorname<br><input type="text" name="vorname"><br>
+Nachname<br><input type="text" name="nachname"><br>
+Firma<br><input type="text" name="firma"><br>
+E-Mail<br><input type="email" name="email"><br>
+Telefon<br><input type="tel" name="telefon"><br>
+Art der Veranstaltung<br>
+<select name="art"><option>Bitte wählen</option><option>Workshop</option><option>Seminar</option><option>Teamtag</option><option>Feier</option><option>Sonstiges</option></select><br>
+Anreisedatum<br><input type="date" name="von"><br>
+Abreisedatum<br><input type="date" name="bis"><br>
+Beginn<br><input type="time" name="beginn"><br>
+Ende<br><input type="time" name="ende"><br>
+Anzahl Personen<br><input type="number" name="personen"><br>
+Raum<br>
+<input type="radio" name="raum" value="werkstatt" checked> Werkstatt (bis 12 Personen, 390 € pro Tag)<br>
+<input type="radio" name="raum" value="halle"> Halle (bis 40 Personen, 890 € pro Tag)<br>
+<input type="radio" name="raum" value="garten"> Gartenhaus (bis 20 Personen, 590 € pro Tag)<br>
+Bestuhlung<br>
+<select name="bestuhlung"><option>Bitte wählen</option><option>U-Form</option><option>Reihe</option><option>Gruppentische</option><option>Stehtische</option></select><br>
+Verpflegung<br>
+<input type="checkbox" name="kaffee" checked> Kaffee und Wasser (8 € pro Person)<br>
+<input type="checkbox" name="mittag" checked> Mittagessen (24 € pro Person)<br>
+<input type="checkbox" name="abend"> Abendessen (39 € pro Person)<br>
+Technik<br>
+<input type="checkbox" name="beamer"> Beamer<br>
+<input type="checkbox" name="mikro"> Mikrofon<br>
+<input type="checkbox" name="moderation"> Moderationskoffer<br>
+Übernachtung benötigt<br>
+<input type="radio" name="uebernachtung" value="ja"> Ja <input type="radio" name="uebernachtung" value="nein"> Nein<br>
+Anzahl Zimmer<br><input type="number" name="zimmer"><br>
+Budget<br><input type="text" name="budget"><br>
+Unterlagen (Ablaufplan)<br><input type="file" name="datei"><br>
+Nachricht<br><textarea name="nachricht"></textarea><br>
+<input type="checkbox" name="newsletter" checked> Newsletter abonnieren<br>
+<input type="checkbox" name="agb"> AGB und Datenschutz akzeptiert<br>
+<input type="submit" value="Absenden">
+</form>
+</body>
+</html>
