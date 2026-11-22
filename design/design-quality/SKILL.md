@@ -253,6 +253,7 @@ Pass when: one shape language, one shadow style and one icon style run through t
 
 Includes:
 - One shape language (radius, nested elements slightly smaller).
+- Stacked items of one group (several alerts, a set of option rows, grouped settings) read as one unit: a small gap, the full radius only on the outer corners of the first and last item, a small radius on the inner corners.
 - Shadows soft and layered, if any, never one heavy blur.
 - One icon style, size and stroke; icons in one or two colors with tight spacing, optically on the line of their text; an icon section never dominates the content.
 - Subtle or no dividers (tables may need them); dividers stay soft.
