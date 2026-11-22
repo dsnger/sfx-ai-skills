@@ -389,6 +389,15 @@ Run this screening last, after the four blocks, on their result. Screen for barr
 - Hero images, videos and web fonts are sized and reserved so the first view neither waits nor shifts.
 - Test the first view and the key task at mobile and desktop sizes, at the width where a component changes, and with zoom or a virtual keyboard where relevant; for supported locales, verify long labels, directional layout and formatted numbers, dates and currencies. Lab observations, missing field data and suspected causes are labeled separately.
 
+## Self-check before reporting (fix mode)
+
+Check the result against these rules and fix every miss before the report:
+
+- No colored glows, halos, gradients or glass for its own sake, except on signature elements the user named. If none is named, nothing is exempt.
+- Exactly one filled primary button per view where the task has one; a button in the header counts.
+- No thin borders on cards and tiles, no side accent bars.
+- No em or en dashes in copy.
+
 ## Output
 
 - Keep replies short, one point per reply.
