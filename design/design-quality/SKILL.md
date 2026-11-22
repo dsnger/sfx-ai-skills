@@ -399,6 +399,8 @@ Check the result against these rules and fix every miss before the report:
 - No thin borders on cards and tiles, no side accent bars.
 - No em or en dashes in copy.
 
+Then add one line below the block reports, next to "Accessibility:": "Self-check:" followed by each rule above with ok, or what was corrected. A run without this line is not finished.
+
 ## Output
 
 - Keep replies short, one point per reply.
