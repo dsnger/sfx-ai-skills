@@ -5,13 +5,22 @@ description: 'Audits, refines, improves and fixes websites, landing pages, mocku
 
 # Design Quality
 
-Run all four blocks one after another and finish each block completely before starting the next.
+Run all four blocks one after another and finish each block completely before starting the next; in fix mode and with no mode given, follow "Flow" below.
 
 ## Modes
 
 - **audit**: `ui-principles`, `ui-refinement`, `ux-psychology`: check only, report with score. `layout-refinement`: check the layout, report with score x / 7.
 - **fix**: `ui-principles`: refine following the sequence in "Fix: steps (`ui-principles`)" below; `ui-refinement`: apply the fixes; `layout-refinement`: apply the moves; `ux-psychology`: improve following the principles. Each block then audits again.
-- No mode given: each block audits first, then asks whether to fix.
+- No mode given: follow "Flow" below.
+
+## Flow (fix mode and no mode given)
+
+Audit mode stays a pure audit. Otherwise:
+
+1. Audit with all four blocks and keep the result as the baseline.
+2. In the copy, apply every fix that needs no decision.
+3. For each open decision (content changes that need approval, conflicting constraints, missing content, options the blocks leave to the user), build two or three alternatives as variants on top of this state, all in one view, each labeled with what it changes. Do not ask in words what can be shown.
+4. Apply the variants the user picks, then audit again and report.
 
 Before designing anything, find what already exists for this surface and build from the most real source in reach (its code, else the running page), in a copy that leaves the product untouched; a screenshot is only evidence, never the thing to rebuild from. Say in one line what you start from before you build.
 
