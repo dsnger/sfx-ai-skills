@@ -4,6 +4,25 @@ Agent skills by SmileFX in the open SKILL.md format. Works with Claude, Codex, G
 
 ## Design
 
+### Which design skill when
+
+- **Building or changing app screens** (lists, forms, dialogs, navigation in a web app): use **app-ui-system**. On first use it sets up the project's UI profile, then every screen is built within it.
+- **Reviewing or improving a finished page or screen** (website, landing page, app screen, poster): use **design-quality**. It already contains the four single skills below as blocks, so do not run it together with them.
+- **Only one aspect** of an existing page or screen: use the matching single skill.
+  - **ui-principles:** the page looks generic or AI-made.
+  - **ui-refinement:** the screen is almost right and needs detail polish.
+  - **layout-refinement:** the composition feels off; also for print, posters and slides.
+  - **ux-psychology:** a flow converts poorly or users drop off.
+- **Logos:** use **logo-design**. It is independent of the others.
+
+**Order when combining:**
+
+1. **app-ui-system** while building.
+2. **design-quality** afterwards, as audit or fix of the built result.
+3. If you use the single skills instead of design-quality, run them in this order: ui-principles, ui-refinement, layout-refinement, ux-psychology.
+
+### Skills
+
 - **[design-quality](design/design-quality/SKILL.md)**
   Audits and fixes pages, screens and components in one run of four blocks (UI principles, detail mistakes, layout techniques, UX psychology), with shared rules, an accessibility floor and a self-check. Fixes go into a copy of the real source; decisions come back as visual variants.
 - **[app-ui-system](design/app-ui-system/SKILL.md)**
