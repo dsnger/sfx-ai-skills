@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: client-create-edit-form
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  One form used for create and edit, in the same centred dialog opened from 'New client' and from each row's edit action; VAT ID read-only when editing with the reason shown; only a close button top right; head and foot fixed, body scrolls; Escape closes and focus returns; fits 360x600; full screen on phones; uses tokens and glossary.

@@ -1,0 +1,12 @@
+:root{
+  --base:4px;
+  --space-1:calc(var(--base)*1);--space-2:calc(var(--base)*2);--space-3:calc(var(--base)*3);--space-4:calc(var(--base)*4);--space-6:calc(var(--base)*6);--space-8:calc(var(--base)*8);
+  --row-pad:calc(var(--base)*4);
+  --radius:12px;
+  --r-surface:calc(var(--radius)*1.4);--r-control:calc(var(--radius)*.8);--r-item:calc(var(--radius)*.6);--r-check:4px;
+  --control-h:36px;--control-h-sm:32px;
+  --bg:#f6f6f4;--surface:#ffffff;--surface-2:#efefec;--fg:#1d1d1b;--fg-2:#5c5c57;--fg-3:#6f6f69;
+  --accent:#0f6e5c;--accent-fg:#ffffff;--warn:#9a5b00;--danger:#b4232a;
+  --shadow:0 1px 2px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.04);
+  --font:"Inter",system-ui,sans-serif;
+}

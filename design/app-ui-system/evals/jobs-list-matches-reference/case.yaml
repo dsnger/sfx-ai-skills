@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: jobs-list-matches-reference
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  A jobs.html that reuses the Clients list's row anatomy, toolbar schema, tokens and page head, adds no second filled action, keeps the title as the only opening control, has empty/loading/error states, uses the glossary terms, and reports what changed and what was not checked.

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clients · Fieldbook</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="shell">
+  <nav class="sidebar" aria-label="Main">
+    <div class="brand">Fieldbook</div>
+    <a href="#" class="nav-item">Today</a>
+    <a href="clients.html" class="nav-item is-active" aria-current="page">Clients</a>
+    <a href="#" class="nav-item">Jobs</a>
+    <a href="#" class="nav-item">Invoices</a>
+    <a href="#" class="nav-item">Team</a>
+  </nav>
+  <main class="content">
+    <header class="page-head">
+      <h1>Clients</h1>
+      <button class="btn btn-primary">New client</button>
+    </header>
+    <div class="toolbar" role="toolbar" aria-label="List tools">
+      <div class="tb-narrow">
+        <input class="input search" type="search" placeholder="Search clients" aria-label="Search clients">
+        <button class="btn btn-quiet">City</button>
+        <button class="btn btn-quiet">Status</button>
+      </div>
+      <div class="tb-arrange">
+        <button class="btn btn-quiet">Sort: Name</button>
+        <button class="btn btn-icon" aria-label="Columns" title="Columns">▦</button>
+        <button class="btn btn-icon" aria-label="Export" title="Export">⤓</button>
+      </div>
+    </div>
+    <section class="list" aria-label="Clients">
+      <div class="row row-head">
+        <span></span><span>Name</span><span>Contact · City</span><span>Open jobs</span><span class="num">Revenue</span><span></span>
+      </div>
+      <div class="row">
+        <span class="avatar">BH</span>
+        <span class="title"><a href="#">Berger Haustechnik</a></span>
+        <span class="ctx">Anna Berger · Essen</span>
+        <span>3</span>
+        <span class="num">12.480 €</span>
+        <span class="actions"><button class="btn btn-icon btn-sm" aria-label="Edit Berger Haustechnik" title="Edit">✎</button></span>
+      </div>
+      <div class="row">
+        <span class="avatar">KM</span>
+        <span class="title"><a href="#">Kröger Metallbau GmbH &amp; Co. KG Niederlassung Bochum</a></span>
+        <span class="ctx">Jens Kröger · Bochum</span>
+        <span>0</span>
+        <span class="num">2.150 €</span>
+        <span class="actions"><button class="btn btn-icon btn-sm" aria-label="Edit Kröger Metallbau" title="Edit">✎</button></span>
+      </div>
+      <div class="row">
+        <span class="avatar">SL</span>
+        <span class="title"><a href="#">Stadtwerke Lünen</a></span>
+        <span class="ctx">Petra Sommer · Lünen</span>
+        <span>7</span>
+        <span class="num">48.900 €</span>
+        <span class="actions"><button class="btn btn-icon btn-sm" aria-label="Edit Stadtwerke Lünen" title="Edit">✎</button></span>
+      </div>
+      <div class="row row-total"><span></span><span>3 clients</span><span></span><span>10</span><span class="num">63.530 €</span><span></span></div>
+    </section>
+    <button class="btn btn-quiet load-more">Load more</button>
+  </main>
+</div>
+</body>
+</html>

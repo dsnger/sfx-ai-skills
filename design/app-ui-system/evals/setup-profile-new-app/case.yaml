@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: setup-profile-new-app
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  A ui-profile.md drafted from the code (React 19, Tailwind v4, shadcn style new-york, radix, lucide, zinc, radius 0.625rem, OKLCH tokens, dark mode), with open points phrased as questions with a recommendation, no invented values presented as decided, and no screens built.
