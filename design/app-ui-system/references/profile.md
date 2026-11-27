@@ -33,9 +33,8 @@ Never assume a library, a style or a value because it is common.
 - Search width in the list toolbar: · max width of sort and group controls:
 - First batch size before "Load more":
 - Period choices · custom range allowed:
-- Breakpoints: identifier column from … · search fills its row below … · compact rows below … · stacked record pages below … · narrow fallbacks below … · smallest supported width …
-- Forms per width for the whole app (each width a parameter; orientation values from one reference project, to adapt): open filters from (~1536) · identifier column from (~1440) · table from (~1280), compact rows below · edge-to-edge with a phone head below (~768) · two-column pages stack below (~1280)
-- Range tables (place × width × case → form): one per list, toolbar and form, with its range (items, filters, values, combinations, none/one/many)
+- Forms per width for the whole app, only here (each width is a parameter; bracketed px values are orientation from one reference project, not defaults: measure your own, they count as proposals until the owner approves): open filters from … (~1536) · identifier column from … (~1440) · table from …, compact rows below (~1280) · list with breakdown stacks below … (~1280) · search fills its row below … · phone layout below … (~768) · narrow fallbacks below … · smallest supported width …
+- Range tables (place × width × case → form): one per place (for example list, toolbar, input form), with its range (items, filters, values, combinations, empty/one/many)
 - Widths and themes to check before "done":
 - Smallest overlay viewport:
 - Undo window after delete:
@@ -46,7 +45,7 @@ Never assume a library, a style or a value because it is common.
 - Main working view:
 - Records that are pages · items that open in a drawer:
 - Reference list (the base row):
-- Order in which columns give way:
+- Order in which columns give way, and the named width for each step:
 - Default tab per list:
 
 ## Patterns
@@ -61,5 +60,5 @@ Never assume a library, a style or a value because it is common.
 - <old rule> → <new rule> (date)
 
 ## Open
-- <decision still pending>
+- <decision or proposed value still pending; proposals are not used in the build>
 ```

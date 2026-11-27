@@ -33,7 +33,7 @@
   - *narrowing:* search, period, filters, reset;
   - *arranging:* tabs, select, group, sort, columns, export, reload.
 - **Search first,** at the left, at one fixed width the profile sets (never stretched); the rest at the right. Below the breakpoint the profile sets it fills its row.
-- **Rows align at both edges.** No reserved empty slots, no gaps without a reason, never a second row that starts halfway. Two designed forms only: expanded (filters open) and compact ("Filters (n)"), chosen by measuring the available width; the phone uses the compact form.
+- **Rows align at both edges.** No reserved empty slots, no gaps without a reason, never a second row that starts halfway. Two designed forms only: expanded (filters open) and compact ("Filters (n)"). The form changes at the one width the profile sets, found by measuring the full range, never by what currently fits; the phone uses the compact form.
 - **Filters:** several values where the data allows; each as narrow as its label; once set, only a number badge (a status filter shows its word instead). The number widens the filter and pushes what follows.
 - **Reset** clears filters only: a plain ✕ right after the last filter, shown only while a filter is set. The search clears itself with its own ✕.
 - **Sorting and grouping** are their own controls, not styled like filters; as wide as their label (up to the maximum the profile sets); a dot when not at the default; a separate switch shows and reverses the direction; their menus end with "Remove sorting" / "Remove grouping" once changed; a second grouping level appears only after a first.

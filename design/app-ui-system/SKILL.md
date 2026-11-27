@@ -31,12 +31,12 @@ These come first.
 5. **Coherent and DRY.** The same thing uses the same component, shows the same information in the same place, has the same form and the same way of entering data, everywhere. A difference needs a stated reason.
 6. **Do not invent; copy proven patterns.** Take the library's own blocks and the patterns of established products (the profile names them). Take a reference product for its scope and function, not for its look.
 7. **Design for every case:** the longest word, many values, everything set at once, empty, loading, failed, every theme the app has, every width.
-8. **Range first, then form.** Before building or changing a list, toolbar or form:
-   a. Record its full range: number of items, filters and values, every combination, and the cases none, one and many.
-   b. From that range, choose one designed form per width, not from the demo data and not by squeezing the desktop view. A form changes only at a fixed, named width, never because a value was chosen. The one exception: a count on a filter may push what follows.
-   c. Record the decision as a short table (place × width × case → form) in the profile and measure it.
+8. **Range first, then form.** Before building or changing any place whose content varies (for example a list, a toolbar, an input form):
+   - **a.** Record its full range: number of items, filters and values, every combination, and the cases empty, one and many.
+   - **b.** From that range, choose one designed form per width, not from the demo data and not by squeezing the desktop view. A form changes only at a fixed, named width, never because a value was chosen. The one exception: the number on a filter may push what follows.
+   - **c.** Record the decision as a short table (place × width × case → form) in the profile, then verify the built result against it by measuring.
 
-   The profile lists every width at which a form changes, for the whole app, in one place. A decision that changes the range (a new field, filter, status, option or role) re-opens the table: update the range and the table, and check every affected place again at every width before reporting done.
+   The profile lists the forms of the whole app, with every width at which one changes, in one place. A decision that changes the range (for example a field, filter, status, option or role added or removed) re-opens the table: update the range and the table, and check every affected place again at every width before reporting done.
 9. **Approved screens stay.** The profile names the reference screen(s). They never change as a side effect. Before changing a shared component, name the approved screens it touches. Nothing a person saw before disappears without the owner's rule.
 10. **Variants only for what is undecided.** Once the owner chooses, build the choice in and remove the alternatives and any switch between them.
 11. **The interface decides first.** What the backend lacks becomes an issue draft with acceptance criteria, never a faked figure.
@@ -72,8 +72,9 @@ Read the reference file for what you are building, before you build it:
 
 Check these before you report, fix every miss, and say in the report what you checked:
 
-- **Approved screens unchanged:** compare every approved screen before and after, at every width the profile lists. A shared change that alters one of them is scoped to the new screen, or left out and named as an open point.
-- **Only approved values used:** nothing that stands in the profile only as a proposal, and no value the profile does not have, is used in the build.
+- **Approved screens unchanged:** compare every approved screen before and after, at every width and theme the profile lists. A shared change that alters one of them is left out and named as an open point for the owner; it never ships as a side effect and never as a one-screen exception.
+- **Only approved values used:** nothing that stands in the profile only as a proposal, and no value outside the profile and the token sources it names, is used in the build.
+- **Range tables current:** every place you touched has its table, and a changed range was re-checked at every width.
 - **States built:** every list and view you touched has its empty, loading and failed state.
 
 ## 5. Report
@@ -82,7 +83,7 @@ When you finish, report briefly:
 
 - what visibly changed, per screen;
 - what you decided yourself under a rule, and which rule;
-- what was not checked (width, theme, state);
+- what you checked (self-check) and what was not checked (width, theme, state);
 - open questions as real choices with your recommendation;
 - one "Suggestions" line for ideas beyond the task, if any.
 
