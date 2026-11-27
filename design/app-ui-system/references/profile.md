@@ -30,6 +30,7 @@ Never assume a library, a style or a value because it is common.
 - Spacing base unit: · shared rhythms (for example row padding):
 - Typefaces (self-hosted): · monospace for identifiers:
 - Accent color and its uses: · status color(s) and their meaning:
+- Status filter width: (default: fixed to its longest word)
 - Search width in the list toolbar: · max width of sort and group controls:
 - First batch size before "Load more":
 - Period choices · custom range allowed:
