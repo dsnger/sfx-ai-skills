@@ -13,7 +13,7 @@ Project-specific text rules (e.g. a `textregeln.md` in the project) take precede
 
 Decide before anything else which kind of text this is, because the truth rules apply differently:
 
-- **Persuasive texts** (landing pages, sales and product pages, offers, campaigns, pitch decks): their job is to make the reader want something. Effect beats rule compliance: when a rule and the selling wording conflict, the selling wording wins. Benefit promises and positioning ("Prozesse, die von selbst laufen", "in Sekunden erledigt") stay. Only commitments of a contractual kind (prices, deadlines, guarantees, scope of service, ownership) must be backed. A concrete claim nobody has proven yet stays in the text and gets a proof question to the client. Effect only counts for wording a native speaker would actually say: a selling form (triad, rhythm, alliteration) is never on its own a reason to keep a line. Check every verb against its subject and object the way people use them in daily speech (a business is not "gebucht", its services are). If one word fails, the line gets rewritten in the same spirit.
+- **Persuasive texts** (landing pages, sales and product pages, offers, campaigns, pitch decks): their job is to make the reader want something. Effect beats rule compliance: when a rule and the selling wording conflict, the selling wording wins. Benefit promises and positioning ("Prozesse, die von selbst laufen", "in Sekunden erledigt") stay. Only commitments of a contractual kind (prices, deadlines, guarantees, scope of service, ownership) must be backed. A concrete claim nobody has proven yet stays in the text and gets a proof question to the client. Effect only counts for wording a native speaker would actually say: a selling form (triad, rhythm, alliteration) is never on its own a reason to keep a line. Check every verb against its subject and object the way people use them in daily speech (a business is not "gebucht", its services are). If one word fails, the line gets rewritten in the same spirit. Images should come from the reader's real situation (searching online is not walking past a shop window).
 - **Factual texts** (journalism, reports, scientific or technical texts, quotes, documentation): every statement must be true and provable; numbers with source and year; nothing is promised or embellished.
 
 When unsure, ask which kind it is. Everything below applies to both kinds unless it says otherwise.
@@ -21,7 +21,7 @@ When unsure, ask which kind it is. Everything below applies to both kinds unless
 ## How to use
 
 1. Before writing: read the project's own text rules and briefing, if any, and decide the text type.
-2. Write the text following the rules below. For each unit (heading, paragraph, button) draft two or three variants and keep the best.
+2. Write the text following the rules below. For each unit (heading, paragraph, button) draft two or three variants and keep the best. When writing new copy or reworking a draft, also read `references/lift-techniques.md` for ways to lift plain lines.
 3. If `scripts/check_sentences.py` is available (it ships with this skill in the sfx-ai-skills repo), run `python3 scripts/check_sentences.py <file>` (HTML or Markdown). Add project nouns that must never act, e.g. `--things "Dashboard|Portal"`. Resolve every hit or consciously keep it. Without the script, check sentence length, things as subject, "nicht … sondern", dashes and short punchlines by hand.
 4. Check every rule below once more by hand. The script only catches mechanical patterns.
 
@@ -32,6 +32,7 @@ When unsure, ask which kind it is. Everything below applies to both kinds unless
   - *Real voice present:* the draft has an angle or a recognizable voice, even if rough. Anything the client has already seen or approved counts as their voice automatically. Keep the argument, the emphasis and the client's vocabulary; fix only buried statements, vague lines, rule violations and structure. Don't add sections nobody asked for. The result is a change list (old → new → reason), not a new text.
   - *Point edit:* "fix this heading". Change only that, plus the minimum around it, and return the rest untouched.
 - **Three questions per line.** Can the reader picture it? Is it concrete enough to be true or false (not vague)? Could a competitor write the exact same sentence, or does it add nothing others don't already say? Three passes: keep it. Two: sharpen the weak spot. One or none: rewrite from the facts or mark `[NEED: …]`. In persuasive texts a concrete but unproven claim passes the second question; it gets a proof question, not a rewrite.
+- **Check whether more cases belong in.** When a line says what the reader gets, check whether it gets better by naming the other main situations the offer solves, not only the first that comes to mind (e.g. readers who are not found and readers who are found but not convinced). When there are many, look for a middle way instead of all or one: the two or three that matter most to the reader, or a wording that covers them together. Judge by what makes the line stronger.
 - **Ration the strong moments.** Most lines are plain, concrete and calm. A page gets one or two memorable moments, usually the main heading and one section. When every line tries to stand out, none does, and the text reads as AI.
 - **Leave-it-alone test.** Before handing over, check every change: clearly better or just different? In persuasive texts also: does the new wording sound more fascinating, more positive, like less work for the reader? If not, the old wording stays. Wording that stays must still be correct, idiomatic language; a line kept "because it sells" names the words that sell and confirms each of them fits its subject. Undo changes without a reason, especially when a real voice was present.
 - **Never weaken an unproven claim silently.** The claim stays as it is and gets a question to the client in a list at the end ("Beleg für ‚in Sekunden'?"). In factual texts, an unproven statement is marked and asked about the same way, never kept as fact. Never invent facts, numbers or testimonials.
@@ -63,8 +64,8 @@ When unsure, ask which kind it is. Everything below applies to both kinds unless
 - **Time logic.** No skewed time statements ("um Technik kümmern wir uns nach dem Start").
 - **No tool or jargon names.** No Lighthouse, W3C, SEO, sitemap, structured data. Say what is done and what the reader gains ("Wir messen, wie schnell Ihre Website lädt").
 - **Don't describe what is visible.** No sentence repeats what layout, cards, steps or images already show ("Wir bieten drei Pakete an" above three price cards). Every sentence adds information or a reason.
-- **Three, five or seven.** Per semantic unit (list, card, accordion, argument block) never more than seven points, and only three, five or seven. Combine and shorten instead.
-- **Positive and lively.** Moderate adjectives on the service ("persönliche Einführung", "einfach", "jederzeit"), not exaggerated, not silly, no assumed feelings. Not "kurzer Termin" or "Videotermin" but "persönliche Einführung im Video-Call". Never offer what can't be delivered.
+- **Three, five or seven.** For arguments, benefits and choices: per semantic unit (list, card, accordion, argument block) prefer three, five or seven points, and pick the strongest rather than all (see "Check whether more cases belong in"). Lists whose value lies in completeness (services, what is included, scope) may run longer; there, cut only what is padding.
+- **Positive and lively.** Moderate adjectives on the service ("persönliche Einführung", "einfach", "jederzeit"), not silly, no assumed feelings. In persuasive texts intensifying words ("maximale Entlastung", "optimal", "wertvolle Impulse") are fine in moderation: a few strong spots, not on every line. Not "kurzer Termin" or "Videotermin" but "persönliche Einführung im Video-Call". Never offer what can't be delivered.
 - **Don't promise the obvious.** What every customer expects anyway (own page title, site goes live only when finished, bugs get fixed) is never a feature, guarantee or checkpoint. It raises the suspicion it might be different otherwise. Check question: Would a customer assume the opposite? If not, delete.
 - **Improving never means lengthening.** A correction makes a sentence clearer or stronger, not longer. If a block now outgrows its counterpart (image, demo), the correction was wrong.
 - **Contrast with stakes.** In "advantage / instead of" lines both sides need attractive, concrete words: "in Ihren eigenen Worten" vs. "verschachtelte Menüs und komplizierte Einstellungen". Sell simplicity, not brevity.
@@ -78,14 +79,14 @@ When unsure, ask which kind it is. Everything below applies to both kinds unless
 
 ## Banned patterns (typical AI tells)
 
-- Triads as a stylistic device (lists of real components are fine)
+- Triads whose words don't fit (see "Text type first"). A triad of precise words can beat a flat heading ("Persönlich. Proaktiv. Praxisnah."); use one or two per page at most
 - Slogans and advertising phrases ("Gefunden, gewählt, gebucht", "Einfach geht's")
 - Wordplay, parallelisms, chiasmus ("Zwei Ziele, eine Grundlage", "Was der KI hilft, hilft auch …")
 - "nicht X, sondern Y"
-- Staccato punchlines ("Bei uns nicht.", "Die KI liefert den Entwurf. Sie entscheiden.")
+- Staccato punchlines as a constant pattern ("Bei uns nicht.", "Die KI liefert den Entwurf. Sie entscheiden."). One or two well-chosen ones per page can work; pairs usually work better than three
 - Half sentences like "… oder eben nicht"
-- Dashes (em or en) as a stylistic device
-- Metaphors from the reader's own industry, including hidden ones
+- Dashes (em or en) as the default connector. At most one per page, where it carries a real pause, e.g. after a list of examples ("A, B, C – das alles …"); everywhere else use a full stop, comma or colon
+- Metaphors from the reader's own industry used carelessly, including hidden ones: a wrong term embarrasses the writer, and borrowed insider talk reads as pretending to belong. A deliberate, sparing comparison that places the offer in terms the reader knows well can be very strong, if every term is used correctly
 - Unexplained jargon
 - Kickers or eyebrows above headings
 - Empty yes-questions and salesy tone ("genickt?")
@@ -93,7 +94,7 @@ When unsure, ask which kind it is. Everything below applies to both kinds unless
 - Summary transitions that recap the previous section before the next point ("Nachdem wir … gesehen haben", "Damit ist klar …")
 - Data sheet tone: "bietet", "ermöglicht", "verfügt über", "ist konfigurierbar" instead of what a person does or gets
 - Vague quantities and hedges ("oft", "viele", "deutlich", "in der Regel") where a concrete figure or claim is possible; without a provable figure, say what happens instead
-- One connected thought chopped into staccato fragments ("Früher manuell. Jetzt automatisch. Das spart Zeit.") instead of one clear sentence
+- One connected thought chopped into a chain of staccato fragments ("Früher manuell. Jetzt automatisch. Das spart Zeit."). Keep at most a pair and continue in a full sentence: "Früher manuell, jetzt automatisch. Das spart Ihnen viel Zeit, die Sie für andere Dinge nutzen können."
 
 *The last four adapted from [vercel-labs/writing-guidelines](https://github.com/vercel-labs/writing-guidelines) (MIT).*
 
@@ -108,7 +109,7 @@ Plain activity words get lifted the same way every time:
 - **Terms from the customer's view.** Name what they pay for the way they understand it.
 - **Headings in customer language.** Quality words belong in the service description, never on what the customer wants. Nobody orders "eine durchdachte Website"; they want bookings, no work, no worries.
 
-Limit: quality words must be provable (no "perfekt", "beste").
+Limit: no unprovable comparisons with others ("perfekt", "die beste", "Nr. 1").
 
 ## Error catalog
 
@@ -141,6 +142,8 @@ Check before every hand-off. Patterns, not project names.
 | Phone as channel | "Oder rufen Sie … an" | Contact person without channel |
 | Assumed organization | "Ihr Team spart Zeit" (maybe one person does it all) | "Sie" or a neutral wording |
 | Kept for its form | "Wird Ihr Betrieb gefunden, gewählt und gebucht?" kept as a selling triad, though nobody "wählt" or "bucht" a business | Check each word: "Ihre Kunden suchen online. Landen sie bei Ihnen?" |
+| Image from the wrong world | "wo Kunden an Ihrem Betrieb vorbeigehen" for online search | An image from the real situation: "ob Kunden Sie bei ihrer Suche finden" |
+| Only half the offer | "warum Kunden Sie nicht finden" when the offer also fixes unconvincing pages | If it stays short: "ob Kunden Sie finden, was sie danach noch abhält und wie Sie das ändern" |
 | Claim weakened without request | "in Sekunden erledigt" turned into "schnell erledigt" | Keep the claim, ask the client for proof |
 
 ## Output
