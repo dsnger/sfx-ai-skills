@@ -14,25 +14,25 @@ Required companions:
 
 ## Steps
 
-1. **Collect instructions.** Pull every requirement, correction and approval from the conversation, project files (text rules, briefings, PRODUCT.md) and earlier versions into a numbered checklist in the project (`docs/checklist-instructions-<page>.md`), with dates. Mark contradictions and clarify them with a question.
+1. **Collect instructions.** Pull every requirement, correction and approval from the conversation, project files (text rules, briefings, PRODUCT.md) and earlier versions into a numbered checklist in the project (`docs/checklist-instructions-<page>.md`), with dates. For each instruction note its scope: which place or purpose it was given for (for example, workshop feedback on explaining AI features to specialists is not a rule for the service promise). Mark contradictions and clarify them with a question.
    *Done when:* every requirement has an item and every contradiction is resolved or asked.
 
-2. **Clarify facts and proof.** List which commitments (prices, deadlines, ownership, services, references, numbers) are proven or approved. Anything missing becomes `[NEED]` or a question to the client, never invented. Market and study numbers only with source and year.
-   *Done when:* every statement of the future page points to a source, an approval or a marked placeholder.
+2. **Clarify facts and proof.** List which commitments (prices, deadlines, ownership, services, references, numbers) are proven or approved. Anything missing becomes `[NEED]` or a question to the client, never invented. Market and study numbers only with source and year. Benefit promises and positioning are not commitments; a concrete unproven claim stays and gets a proof question. Product knowledge is no correction order: change facts in the text only when the client asked for it, otherwise ask.
+   *Done when:* every commitment points to a source, an approval or a marked placeholder.
 
-3. **Build the reader chain.** Write the concept as a table: stage, question on arrival, what the stage must achieve, thought afterwards. Default chain (deviate only with a reason) below.
+3. **Build the reader chain.** The page type decides the chain (see [references/page-types.md](references/page-types.md)). Write the concept as a table: stage, question on arrival, what the stage must achieve, thought afterwards. The default chain below fits offer pages; other page types follow their own chain.
    *Done when:* the headings alone tell the argument and every stage connects to the previous one.
 
 4. **Write.** Two or three variants per unit, keep the best. Never adopt the client's wording. Then run the `copy-rules` sentence checker and resolve every hit.
    *Done when:* the checker is clean and every rule in `copy-rules` has been checked once.
 
-5. **Review rounds.** Run the `copy-review-panel` (personas, sales psychology expert, client reviewer, second AI or senior copywriter). Adopt hints that support the rules or the checklist; reject with reasons hints that contradict client requirements. Then a new round.
+5. **Review rounds.** Run the `copy-review-panel` (personas, sales psychology expert, client reviewer, brand and campaign reviewer, second AI or senior copywriter). Adopt hints that support the rules or the checklist; reject with reasons hints that contradict client requirements. Then a new round.
    *Done when:* the client reviewer names no spot that would annoy the client and no persona drops out at a solvable spot. Never hand in the first version.
 
 6. **Hand-off.** Generate the source of truth (`texts-final.md`) from the built page, with open commitments as a "to be confirmed" list at the end. Tell the client briefly: what changed, the reviewers' scores, what only they can provide.
    *Done when:* page, text file and checklist show the same state.
 
-## Reader chain (default)
+## Reader chain (default for offer pages)
 
 | Stage | Question on arrival | Must achieve |
 | --- | --- | --- |
@@ -62,6 +62,7 @@ For presentations, the same chain applies per slide group: one statement per sli
 
 - **Every instruction immediately becomes a checklist item**, then implement or ask specifically. Decide yourself what can be derived from the project, research or context. Do tasks like "take this as inspiration" right away.
 - **Never silently change approved text.** Ask first; if that's impossible, report it first in the next update with before/after.
+- **Make every change visible** once a version the client has seen is revised: a change list or an overlay with old, new and reason for each spot.
 - **On any criticism, check the whole first:** Is the section in the right place of the reader chain? Is it redundant with another section? Only then change locally. Never several isolated fixes in a row without reading the whole page.
 - **Suggestions on approved texts as a table** (spot, problem, suggestion); the client chooses ("alle" is enough).
 - **Make your own recommendation.** Propose, justify, and ask only about real decisions. Show finished options instead of links to styles.

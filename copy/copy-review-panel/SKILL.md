@@ -1,6 +1,6 @@
 ---
 name: copy-review-panel
-description: Runs a panel of independent reviewers on copy (sales pages, landing pages, offers, presentations), namely target-group personas, a sales psychology expert, a strict client reviewer, a second AI or senior copywriter, behavior tests and a debate with a referee, then merges the findings. Use this skill whenever copy should be tested before hand-off, the user asks "how would customers react", wants feedback rounds, a second opinion or a score for a text, even if they don't say "panel".
+description: Runs a panel of independent reviewers on copy (sales pages, landing pages, offers, presentations), namely target-group personas, a sales psychology expert, a strict client reviewer, a brand and campaign reviewer, a second AI or senior copywriter, behavior tests and a debate with a referee, then merges the findings. Use this skill whenever copy should be tested before hand-off, the user asks "how would customers react", wants feedback rounds, a second opinion or a score for a text, even if they don't say "panel".
 ---
 
 # Copy Review Panel
@@ -27,7 +27,11 @@ One author grading their own text misses what readers notice. This panel lets se
 
 ### Client reviewer (the strictest)
 
-> You review the way the client would. They are demanding and have already rejected versions as insufficient. Read checklist {path}, text rules {path} and their original messages {path} (tone and standard). Check {path}. Grade from their view. Every spot that would annoy them, worst first: quote, reason, finished replacement (things never as subject, no assumptions, no triads or punchlines, max 15 words, never their own words, never patronizing). Watch especially for language logic, references, unproven claims, the common thread. Would they buy the service themselves?
+> You review the way the client would. They are demanding and have already rejected versions as insufficient. Read checklist {path}, text rules {path} and their original messages {path} (tone and standard). Check {path}. Grade from their view. Every spot that would annoy them, worst first: quote, reason, finished replacement (things never as subject, no assumptions, no triads or punchlines, max 15 words, never their own words, never patronizing). Watch especially for language logic, references, unproven commitments, the common thread. An unproven benefit claim is a question for the client, not a spot to weaken. Would they buy the service themselves?
+
+### Brand and campaign reviewer
+
+> You judge copy the way a brand and campaign lead would. Read {path}. Does it create desire, impact and pace? Where does it sound careful, flat or like a data sheet? Quote each spot, say what it costs in effect, and give a more wanting replacement that keeps every commitment true. Grade 1 to 6 for effect.
 
 ### Second AI or senior copywriter without prior knowledge
 
@@ -46,6 +50,7 @@ Three experts (different roles and models) review independently, given only thei
 ## Handling findings
 
 - Adopt a hint when it supports the rules, the checklist or proven facts.
+- A hint that weakens a statement must name the concrete client instruction behind it; otherwise reject it.
 - Reject it, with a reason in the report, when it contradicts client requirements (e.g. order of sections, questions as headings).
 - Never invent missing facts; collect them and present them to the client at the end.
 - After changes, run a new round with the same reviewers until the client reviewer finds nothing that would annoy the client and no persona drops out at a solvable spot.

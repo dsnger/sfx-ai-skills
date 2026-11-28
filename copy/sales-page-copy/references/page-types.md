@@ -4,6 +4,10 @@
 
 Header (claim with a result word, subline with scope, CTA, seals, sticker) → three pain questions → solution (hand over three worries, CTA) → strongest differentiator as a demo → implementation per pain (product views) → trust/industry (why we can do this) → quality (review report) → contract (costs, rights, contact person) → process (steps with graphics, CTA) → prices (rent/buy switch, slider, recommendation, calculation example per package, comparison collapsible) → FAQ (7) → contact (conversation, small hint at the alternative offer).
 
+## Homepage of an umbrella brand (teaser)
+
+The shiny wrapping. It awakens curiosity and opens doors to the offer pages; it does not come straight in with pain, price and contract. Header with the brand promise → what the brand stands for, in wanting words → the offers as doors (one sentence of desire each, link to its page) → proof of the brand (clients, results) → one next step. Pain questions, price tables and contract details belong on the offer pages.
+
 ## Package page (detail page)
 
 The reader is already interested. They need emotional confirmation, then the main page's arguments backed up, only then details.

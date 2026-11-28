@@ -9,9 +9,18 @@ Rules for German copy that respects the reader, says something real and sounds l
 
 Project-specific text rules (e.g. a `textregeln.md` in the project) take precedence. These rules always apply in addition.
 
+## Text type first
+
+Decide before anything else which kind of text this is, because the truth rules apply differently:
+
+- **Persuasive texts** (landing pages, sales and product pages, offers, campaigns, pitch decks): their job is to make the reader want something. Effect beats rule compliance: when a rule and the selling wording conflict, the selling wording wins. Benefit promises and positioning ("Prozesse, die von selbst laufen", "in Sekunden erledigt") stay. Only commitments of a contractual kind (prices, deadlines, guarantees, scope of service, ownership) must be backed. A concrete claim nobody has proven yet stays in the text and gets a proof question to the client. Effect only counts for wording a native speaker would actually say: a selling form (triad, rhythm, alliteration) is never on its own a reason to keep a line. Check every verb against its subject and object the way people use them in daily speech (a business is not "gebucht", its services are). If one word fails, the line gets rewritten in the same spirit.
+- **Factual texts** (journalism, reports, scientific or technical texts, quotes, documentation): every statement must be true and provable; numbers with source and year; nothing is promised or embellished.
+
+When unsure, ask which kind it is. Everything below applies to both kinds unless it says otherwise.
+
 ## How to use
 
-1. Before writing: read the project's own text rules and briefing, if any.
+1. Before writing: read the project's own text rules and briefing, if any, and decide the text type.
 2. Write the text following the rules below. For each unit (heading, paragraph, button) draft two or three variants and keep the best.
 3. If `scripts/check_sentences.py` is available (it ships with this skill in the sfx-ai-skills repo), run `python3 scripts/check_sentences.py <file>` (HTML or Markdown). Add project nouns that must never act, e.g. `--things "Dashboard|Portal"`. Resolve every hit or consciously keep it. Without the script, check sentence length, things as subject, "nicht … sondern", dashes and short punchlines by hand.
 4. Check every rule below once more by hand. The script only catches mechanical patterns.
@@ -20,12 +29,12 @@ Project-specific text rules (e.g. a `textregeln.md` in the project) take precede
 
 - **Diagnose first, in one line with evidence.** Which situation is this? Then change only as much as the situation allows.
   - *Blank or generic:* a one-line ask or interchangeable company speak. Build the argument from briefing and facts; freedom in the angle, never in the facts.
-  - *Real voice present:* the draft has an angle or a recognizable voice, even if rough. Keep the argument, the emphasis and the client's vocabulary; fix only buried statements, vague lines, rule violations and structure. Don't add sections nobody asked for.
+  - *Real voice present:* the draft has an angle or a recognizable voice, even if rough. Anything the client has already seen or approved counts as their voice automatically. Keep the argument, the emphasis and the client's vocabulary; fix only buried statements, vague lines, rule violations and structure. Don't add sections nobody asked for. The result is a change list (old → new → reason), not a new text.
   - *Point edit:* "fix this heading". Change only that, plus the minimum around it, and return the rest untouched.
-- **Three questions per line.** Can the reader picture it? Can it be proven true or false? Could a competitor write the exact same sentence, or does it add nothing others don't already say? Three passes: keep it. Two: sharpen the weak spot. One or none: rewrite from the facts or mark `[NEED: …]`.
+- **Three questions per line.** Can the reader picture it? Is it concrete enough to be true or false (not vague)? Could a competitor write the exact same sentence, or does it add nothing others don't already say? Three passes: keep it. Two: sharpen the weak spot. One or none: rewrite from the facts or mark `[NEED: …]`. In persuasive texts a concrete but unproven claim passes the second question; it gets a proof question, not a rewrite.
 - **Ration the strong moments.** Most lines are plain, concrete and calm. A page gets one or two memorable moments, usually the main heading and one section. When every line tries to stand out, none does, and the text reads as AI.
-- **Leave-it-alone test.** Before handing over, check every change: clearly better or just different? Undo changes without a reason, especially when a real voice was present.
-- **Declined claims name their unlock.** Never write a claim the facts don't carry, and never drop it silently either. Name the claim, say why it falls short, offer the closest provable alternative and say which proof would allow the original (survey with source, written guarantee, measured times, certificate). This turns a deletion into a task for the client.
+- **Leave-it-alone test.** Before handing over, check every change: clearly better or just different? In persuasive texts also: does the new wording sound more fascinating, more positive, like less work for the reader? If not, the old wording stays. Wording that stays must still be correct, idiomatic language; a line kept "because it sells" names the words that sell and confirms each of them fits its subject. Undo changes without a reason, especially when a real voice was present.
+- **Never weaken an unproven claim silently.** The claim stays as it is and gets a question to the client in a list at the end ("Beleg für ‚in Sekunden'?"). In factual texts, an unproven statement is marked and asked about the same way, never kept as fact. Never invent facts, numbers or testimonials.
 
 *Diagnosis, the three questions, ration and leave-it-alone test adapted from the `copywriting` skill in [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT), which credits Profound's skills-marketing-library (MIT); the "adds nothing others say" question from [kostja94/marketing-skills](https://github.com/kostja94/marketing-skills) (MIT).*
 
@@ -38,7 +47,7 @@ Project-specific text rules (e.g. a `textregeln.md` in the project) take precede
 | **No assumptions about their history.** Don't claim who built their website, what they do in the evening, which agency they had; ask real questions instead | Wrong assumptions break trust instantly | Could this be untrue for some readers? |
 | **Name the reader's real goal.** More customers, more bookings, less work. Not a means like "found on Google" | Means are not motivating, results are | Is this the goal or only a tool? |
 | **No constructed scenes.** No invented evenings, people or story examples. Invented names only in clearly labeled example graphics | Staged scenes feel fake | Did this actually happen? |
-| **Honest about limits.** No ranking guarantees, nothing that can't be in a contract | Overpromising costs credibility later | Could this be written into a contract? |
+| **Honest about commitments.** Prices, deadlines, guarantees and scope of service must hold; no ranking guarantees. This does not apply to benefit promises and positioning | Broken commitments cost credibility later | Is this a commitment the reader could hold us to, like a price, a deadline or a guarantee? |
 | **Inform before offering.** Readers recognize their gap themselves before an offer comes; pains are named openly, never dramatized | Fear and pressure create resistance | Does the reader see the problem before the solution, without being scared? |
 | **Competition only with evidence.** Argue with competitive pressure only if the market situation is proven; otherwise creating demand is often the stronger argument | Assumed pressure sounds like a sales trick | Is there proof that competitors really do this? |
 | **No jabs at your own industry** ("typical agency trouble") if the sender is part of it. Pick up worries as a question | Jabs backfire on the sender | Would a colleague feel attacked? |
@@ -46,7 +55,7 @@ Project-specific text rules (e.g. a `textregeln.md` in the project) take precede
 ## Sentences and language
 
 - **Sie form**, reading level grade 5 to 7, sentences of at most 15 words.
-- **Only people act.** Things, systems, pages, prices and rules are never the subject, not even with "ist", "steht", "liegt", "gilt", "bestimmt", "kostet". At most "dient dazu", "vereinfacht". Check question: Who is doing something here?
+- **Only people act.** Things, systems, pages, prices and rules are never the subject, not even with "ist", "steht", "liegt", "gilt", "bestimmt", "kostet". At most "dient dazu", "vereinfacht". Check question: Who is doing something here? Exception: in promises about automation and AI, the thing acting is exactly the message ("Die KI kennt jeden Vertrag"), so it may be the subject.
   - Wrong: "Die Website zeigt die Termine." Right: "Ihre Kunden sehen die Termine auf jeder Seite."
   - Wrong: "Stehen Ihre Termine in PDFs?" Right: "Verwalten Sie Ihre Termine in Tabellen oder auf Papier?"
 - **Transitive verbs need an object.** Not "Sie ändern sofort selbst", but "Änderungen erledigen Sie sofort selbst".
@@ -80,7 +89,7 @@ Project-specific text rules (e.g. a `textregeln.md` in the project) take precede
 - Unexplained jargon
 - Kickers or eyebrows above headings
 - Empty yes-questions and salesy tone ("genickt?")
-- Invented numbers, testimonials or promises
+- Invented numbers or testimonials, and promises of services that do not exist
 - Summary transitions that recap the previous section before the next point ("Nachdem wir … gesehen haben", "Damit ist klar …")
 - Data sheet tone: "bietet", "ermöglicht", "verfügt über", "ist konfigurierbar" instead of what a person does or gets
 - Vague quantities and hedges ("oft", "viele", "deutlich", "in der Regel") where a concrete figure or claim is possible; without a provable figure, say what happens instead
@@ -130,9 +139,13 @@ Check before every hand-off. Patterns, not project names.
 | Cost question as heading | "Was zahlen Sie heute …?" | Value heading, comparison small below |
 | Verb without object | "Sie ändern sofort selbst" | "Änderungen erledigen Sie sofort selbst" |
 | Phone as channel | "Oder rufen Sie … an" | Contact person without channel |
+| Assumed organization | "Ihr Team spart Zeit" (maybe one person does it all) | "Sie" or a neutral wording |
+| Kept for its form | "Wird Ihr Betrieb gefunden, gewählt und gebucht?" kept as a selling triad, though nobody "wählt" or "bucht" a business | Check each word: "Ihre Kunden suchen online. Landen sie bei Ihnen?" |
+| Claim weakened without request | "in Sekunden erledigt" turned into "schnell erledigt" | Keep the claim, ask the client for proof |
 
 ## Output
 
 - Keep replies short, one point per reply.
+- When a text the client has already seen is revised, show every change visibly (old → new → reason, as a list or an overlay on the page), so wrong changes are caught at a glance.
 - Always output corrected texts complete and copy-ready, never only the changed sentence.
 - Provide created files as clickable links.
