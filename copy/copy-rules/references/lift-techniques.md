@@ -9,7 +9,7 @@ Ways a professional copywriter lifts a plain, correct draft into copy that sells
 2. **Name the reader's situation, then the relief.** First a plain fact about the reader's life that holds for nearly every reader, then what the offer takes off their plate. Never an invented scene or an assumed feeling.
    - "Im Tagesgeschäft bleibt wenig Zeit, die Zahlen ständig im Blick zu behalten. Das nehmen wir Ihnen ab."
 
-3. **Offer a benefit the reader did not think of.** One concrete extra the offer brings beyond the obvious task, only if it is real.
+3. **Offer a benefit the reader did not think of.** One concrete extra the offer brings beyond the obvious task. It can come from the facts and the briefing, or from general knowledge of the trade: what a service like this typically makes possible. Use it with confidence; where the business itself hasn't confirmed it, add a question to the client.
    - "Sprechen Sie uns an, bevor Sie Gehälter erhöhen. Oft gibt es Spielräume, die beiden Seiten nutzen."
 
 4. **Ask the reader's own questions.** Put the question the reader already has in their head, then answer it. It must be a real question with a real answer, not an empty yes-question.
